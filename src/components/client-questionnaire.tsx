@@ -2,8 +2,20 @@
 
 import { useState } from "react";
 
-export function ClientQuestionnaire({ serviceType, onSubmit, onCancel }) {
-  const [answers, setAnswers] = useState({});
+export function ClientQuestionnaire({
+  serviceType,
+  onSubmit,
+  onCancel,
+}: {
+  serviceType: string;
+  onSubmit: (data: {
+    serviceType: string;
+    answers: Record<string, string | string[]>;
+    timestamp: string;
+  }) => void;
+  onCancel: () => void;
+}) {
+  const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
   const [currentStep, setCurrentStep] = useState(0);
 
   const questions = {
@@ -164,10 +176,11 @@ export function ClientQuestionnaire({ serviceType, onSubmit, onCancel }) {
     ],
   };
 
-  const currentQuestions = questions[serviceType] || [];
+  const currentQuestions =
+    questions[serviceType as keyof typeof questions] || [];
   const currentQuestion = currentQuestions[currentStep];
 
-  const handleAnswer = (questionId, answer) => {
+  const handleAnswer = (questionId: string, answer: string | string[]) => {
     setAnswers((prev) => ({
       ...prev,
       [questionId]: answer,
@@ -190,12 +203,12 @@ export function ClientQuestionnaire({ serviceType, onSubmit, onCancel }) {
     });
   };
 
-  const renderQuestion = (question) => {
+  const renderQuestion = (question: any) => {
     switch (question.type) {
       case "radio":
         return (
           <div className="space-y-3">
-            {question.options.map((option, index) => (
+            {question.options.map((option: string, index: number) => (
               <label
                 key={index}
                 className="flex items-start gap-3 cursor-pointer"
@@ -217,7 +230,7 @@ export function ClientQuestionnaire({ serviceType, onSubmit, onCancel }) {
       case "checkbox":
         return (
           <div className="space-y-3">
-            {question.options.map((option, index) => (
+            {question.options.map((option: string, index: number) => (
               <label
                 key={index}
                 className="flex items-start gap-3 cursor-pointer"
@@ -226,7 +239,8 @@ export function ClientQuestionnaire({ serviceType, onSubmit, onCancel }) {
                   type="checkbox"
                   checked={answers[question.id]?.includes(option) || false}
                   onChange={(e) => {
-                    const currentAnswers = answers[question.id] || [];
+                    const currentAnswers =
+                      (answers[question.id] as string[]) || [];
                     if (e.target.checked) {
                       handleAnswer(question.id, [...currentAnswers, option]);
                     } else {

@@ -21,4 +21,7 @@ export const contactFormSchema = z.object({
     }, "מספר טלפון ישראלי לא תקין"),
 });
 
+export const leadSchema = contactFormSchema;
+
 export type ContactFormData = z.infer<typeof contactFormSchema>;
+export type LeadData = z.infer<typeof leadSchema>;

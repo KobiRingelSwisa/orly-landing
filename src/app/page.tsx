@@ -1,54 +1,9 @@
 "use client";
 
 import { Header } from "@/components/header";
-import { ClientQuestionnaire } from "@/components/client-questionnaire";
 import { ContactForm } from "@/components/contact-form";
-import { useState } from "react";
 
 export default function HomePage() {
-  const [selectedService, setSelectedService] = useState(null);
-  const [showPayment, setShowPayment] = useState(false);
-  const [showQuestionnaire, setShowQuestionnaire] = useState(false);
-
-  const services = {
-    focus: {
-      name: "שיחת מיקוד והכוונה",
-      price: 500,
-      description: "שיחה ממוקדת של שעה להבנת המצב והצעד הבא",
-    },
-    four: {
-      name: "תהליך 4 מפגשים",
-      price: 2500,
-      description: "תהליך עומק למציאת הייעוד והבניית תוכנית עסקית",
-    },
-    represent: {
-      name: "שירותי ייצוג",
-      price: 1200,
-      description: "ייצוג מול רשויות וטיפול בניירת",
-    },
-  };
-
-  const selectService = (serviceType) => {
-    setSelectedService(serviceType);
-    setShowPayment(true);
-  };
-
-  const handlePayment = () => {
-    // כאן תהיה אינטגרציה עם מערכת תשלום
-    alert(
-      `תשלום של ₪${services[selectedService].price} עבור ${services[selectedService].name}`
-    );
-    setShowPayment(false);
-    setShowQuestionnaire(true);
-  };
-
-  const handleQuestionnaireSubmit = (answers) => {
-    // כאן תהיה שליחה לשרת
-    alert("השאלון נשלח בהצלחה! אורלי תחזור אליך בקרוב.");
-    setShowQuestionnaire(false);
-    setSelectedService(null);
-  };
-
   return (
     <>
       <script
@@ -80,117 +35,206 @@ export default function HomePage() {
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8">
                 <span className="gradient-text">
-                  אני יודעת כמה מתסכל זה להרגיש שהמספרים והבירוקרטיה מנהלים אותך
+                  בואו נדבר בכנות – המספרים והבירוקרטיה הורסים לך את השינה,
+                  נכון?
                 </span>
               </h1>
 
-              <div className="text-[18px] leading-8 text-[var(--ink)] mb-8 space-y-4">
-                <p>אני אורלי, מאמנת עסקית ורו״ח עם 20 שנות ניסיון.</p>
+              <div className="text-[18px] leading-8 text-[var(--ink)] mb-8 space-y-6">
                 <p>
-                  המטרה שלי היא לעזור לך לעשות סדר בכסף, להיות רגוע/ה מול
-                  הרשויות, ולשחרר אמונות שמגבילות אותך.
+                  היי, אני אורלי. רואה חשבון עם 20 שנות ניסיון, אבל לא מהסוג
+                  שאתה חושב.
+                </p>
+                <p>
+                  אני יודעת בדיוק מה אתה מרגיש כשאתה מקבל מכתב מהמס, כשאתה מביט
+                  בגיליון האקסל ולא מבין כלום, או כשאתה שוכב בלילה וחושב "למה
+                  אני לא מצליח להרוויח יותר למרות שאני עובד כל כך קשה?"
+                </p>
+                <p>
+                  אני כאן כי למדתי שהבעיה לא במספרים – הבעיה היא שאף אחד לא
+                  הסביר לך איך לחשוב על כסף בלי להרגיש כמו אידיוט. אני כאן כי
+                  אני יודעת איך לחבר בין הסדר הפיננסי שצריך לבין התודעה שמונעת
+                  ממך להצליח באמת.
+                </p>
+                <p>
+                  המטרה שלי? פשוטה – לעזור לך לישון בלילה. להיות רגוע עם הכסף
+                  שלך. להפסיק לפחד מהרשויות. ולהתחיל להרוויח מה שאתה באמת שווה.
                 </p>
               </div>
 
               <div className="mb-8">
-                <a href="/contact" className="btn btn-primary">
-                  קבעו שיחת ייעוץ
+                <a href="#contact" className="btn btn-primary">
+                  בואו נתחיל לדבר – קבעו שיחת ייעוץ
                 </a>
               </div>
 
               <div className="text-sm text-[var(--ink)] opacity-70">
                 <span>20+ שנות ניסיון</span>
                 <span className="mx-2">•</span>
-                <span>ליווי לבעלי עסקים ונותני שירות</span>
+                <span>מאות בעלי עסקים שכבר נושמים לרווחה</span>
                 <span className="mx-2">•</span>
-                <span>גישה אישית, פשוטה וברורה</span>
+                <span>אפס שיפוטיות, הרבה הבנה</span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Pain → Solution Cards */}
+        {/* Pain → Solution Stories */}
         <section className="section-y bg-[var(--paper)]">
           <div className="container-max">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[var(--ink)] mb-4">
+                אני יודעת מה אתה עובר – בואו נדבר על זה בכנות
+              </h2>
+              <p className="text-[18px] text-[var(--ink)] opacity-70">
+                כל אחד מהסיפורים האלה הוא של מישהו אמיתי שאני עבדתי איתו. אולי
+                אתה תתחבר לאחד מהם?
+              </p>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="card p-8">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-[var(--ink)] mb-2">
-                    הכאב:
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-[var(--ink)] mb-4">
+                    הסיפור של דנה – הניירת שהורגת אותי
                   </h3>
-                  <p className="font-bold text-[var(--ink)]">
-                    הניירת והבירוקרטיה חונקות אותי.
+                  <p className="text-[var(--ink)] mb-4">
+                    "דנה הגיעה אליי אחרי שהיא קיבלה מכתב מהמס. היא ישבה במשרד
+                    שלי ובכתה. 'אני מפחדת לפתוח את המכתבים', היא אמרה לי. 'כל
+                    פעם שאני רואה מעטפה של רשות המסים, הלב שלי עוצר. אני לא
+                    מבינה כלום במספרים האלה, ואני מרגישה כמו אידיוט.'"
+                  </p>
+                  <p className="text-[var(--ink)] mb-4">
+                    "דנה, מטפלת מוכשרת, הייתה כל כך טובה בעבודה שלה אבל
+                    הבירוקרטיה חיסלה לה את הביטחון. הניירת הצטברה, המכתבים לא
+                    נענו, והיא התחילה לפחד שכל יום יבוא מישהו לדלת."
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-2">
-                    הפתרון:
+                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-4">
+                    איך אני עזרתי לה:
                   </h3>
-                  <p className="text-[var(--ink)]">
-                    אני אעשה לך סדר ואייצג אותך מול הרשויות, כדי שתוכל/י להיות
-                    רגוע/ה.
+                  <p className="text-[var(--ink)] mb-4">
+                    "לקחתי את כל הניירת שלה, עשיתי סדר, וייצגתי אותה מול
+                    הרשויות. אבל החלק החשוב באמת? הסברתי לה בדיוק מה קורה בכל
+                    שלב. עכשיו היא יודעת מה המספרים אומרים, והיא לא מפחדת יותר."
+                  </p>
+                  <p className="text-[var(--ink)] font-semibold">
+                    "היום דנה ישנה טוב בלילה. הניירת מטופלת, והיא מבינה מה קורה
+                    עם הכסף שלה."
                   </p>
                 </div>
               </div>
 
               <div className="card p-8">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-[var(--ink)] mb-2">
-                    הכאב:
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-[var(--ink)] mb-4">
+                    הסיפור של רונן – הכסף הזה מפחיד אותי
                   </h3>
-                  <p className="font-bold text-[var(--ink)]">
-                    אני מפחד/ת מהכסף—לא מבין/ה איפה אני עומד/ת.
+                  <p className="text-[var(--ink)] mb-4">
+                    "רונן, יועץ עסקי מצוין, הגיע אליי אחרי שנתיים של עבודה קשה.
+                    'אני לא מבין', הוא אמר, 'אני עובד כל כך קשה, אבל אני לא יודע
+                    איפה אני עומד. הכסף נכנס ויוצא, ואני מרגיש כמו בסרט נע. אני
+                    לא יודע אם אני מרוויח או מפסיד.'"
+                  </p>
+                  <p className="text-[var(--ink)] mb-4">
+                    "רונן היה מבולבל לגמרי. הוא היה טוב במה שהוא עושה, אבל הכסף
+                    הפך להיות משהו מפחיד ומסתורי. הוא לא ידע איך לתמחר, איך
+                    לעקוב, ואיך להבין אם העסק שלו באמת עובד."
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-2">
-                    הפתרון:
+                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-4">
+                    איך אני עזרתי לו:
                   </h3>
-                  <p className="text-[var(--ink)]">
-                    אני אסביר בפשטות, אבנה איתך תמונת מצב ותוכנית פעולה שקל
-                    לעמוד בה.
+                  <p className="text-[var(--ink)] mb-4">
+                    "בניתי לו מערכת פשוטה לעקוב אחרי הכסף. הסברתי לו בדיוק מה כל
+                    מספר אומר, איך לתמחר נכון, ואיך להבין אם העסק שלו צומח.
+                    עכשיו הוא יודע בדיוק איפה הוא עומד."
+                  </p>
+                  <p className="text-[var(--ink)] font-semibold">
+                    "היום רונן יודע בדיוק כמה הוא מרוויח, איך העסק שלו מתקדם,
+                    והוא לא מפחד יותר מהמספרים."
                   </p>
                 </div>
               </div>
 
               <div className="card p-8">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-[var(--ink)] mb-2">
-                    הכאב:
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-[var(--ink)] mb-4">
+                    הסיפור של מירי – כסף לא בשבילי
                   </h3>
-                  <p className="font-bold text-[var(--ink)]">
-                    עמוק בפנים אני מאמין/ה שכסף לא בשבילי.
+                  <p className="text-[var(--ink)] mb-4">
+                    "מירי, מאמנת מוכשרת, הגיעה אליי אחרי שנתיים של קושי להרוויח.
+                    'אני יודעת שאני טובה', היא אמרה, 'אבל עמוק בפנים אני מרגישה
+                    שכסף לא בשבילי. כמו שאני לא ראויה להרוויח יותר. זה נשמע
+                    מטופש, אבל זה מה שאני מרגישה.'"
+                  </p>
+                  <p className="text-[var(--ink)] mb-4">
+                    "מירי הייתה תקועה. היא הייתה מוכשרת, לקוחות אהבו אותה, אבל
+                    היא לא הצליחה לתמחר נכון, לא ביקשה תשלום בזמן, ולא האמינה
+                    שהיא ראויה להרוויח יותר. האמונות שלה על כסף חוסמות אותה."
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-2">
-                    הפתרון:
+                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-4">
+                    איך אני עזרתי לה:
                   </h3>
-                  <p className="text-[var(--ink)]">
-                    אני אעזור לשחרר אמונות מגבילות ולבנות מערכת יחסים חדשה
-                    ובריאה עם כסף.
+                  <p className="text-[var(--ink)] mb-4">
+                    "עבדנו יחד על האמונות שלה על כסף. גילינו איפה זה התחיל, איך
+                    זה משפיע על ההחלטות שלה, ובנינו יחד מערכת יחסים חדשה עם כסף.
+                    עכשיו היא מבינה שהיא ראויה להרוויח מה שהיא שווה."
+                  </p>
+                  <p className="text-[var(--ink)] font-semibold">
+                    "היום מירי מרוויחה פי שניים ממה שהרוויחה קודם, והיא לא
+                    מרגישה אשמה על זה."
                   </p>
                 </div>
               </div>
 
               <div className="card p-8">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-[var(--ink)] mb-2">
-                    הכאב:
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-[var(--ink)] mb-4">
+                    הסיפור של יוסי – עובד קשה אבל תקוע
                   </h3>
-                  <p className="font-bold text-[var(--ink)]">
-                    אני עובד/ת קשה אבל מרגיש/ה תקוע/ה.
+                  <p className="text-[var(--ink)] mb-4">
+                    "יוסי, עורך דין מוכשר, הגיע אליי אחרי 5 שנים של עבודה קשה.
+                    'אני עובד 12 שעות ביום', הוא אמר, 'אבל אני מרגיש שאני רץ
+                    במקום. הכנסה שלי לא גדלה, אני לא יודע איך לצמוח, ואני מתחיל
+                    לאבד תקווה.'"
+                  </p>
+                  <p className="text-[var(--ink)] mb-4">
+                    "יוסי היה מתוסכל. הוא עבד קשה, היה מקצועי, אבל העסק שלו לא
+                    צמח. הוא לא ידע איך לחבר בין העבודה הקשה שלו לבין התוצאות
+                    שהוא רצה. הוא הרגיש שהוא עובד נגד עצמו."
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-2">
-                    הפתרון:
+                  <h3 className="text-xl font-bold text-[var(--rose-1)] mb-4">
+                    איך אני עזרתי לו:
                   </h3>
-                  <p className="text-[var(--ink)]">
-                    אני אחבר בין מספרים לתודעה—כדי שתראה/י תנועה אמיתית בעסק.
+                  <p className="text-[var(--ink)] mb-4">
+                    "עבדנו על החיבור בין המספרים לתודעה. גילינו איפה הוא חוסם את
+                    עצמו, איך הוא יכול לעבוד פחות ולהרוויח יותר, ובנינו תוכנית
+                    צמיחה שמתאימה לו. עכשיו הוא יודע איך להפוך את העבודה הקשה
+                    שלו לתוצאות."
+                  </p>
+                  <p className="text-[var(--ink)] font-semibold">
+                    "היום יוסי עובד פחות שעות, מרוויח יותר, והוא רואה איך העסק
+                    שלו צומח כל חודש."
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-[18px] text-[var(--ink)] mb-6">
+                איזה מהסיפורים האלה נשמע לך מוכר? אם אחד מהם דיבר אליך, בואו
+                נדבר.
+              </p>
+              <a href="#contact" className="btn btn-primary">
+                אני רוצה לספר לך את הסיפור שלי
+              </a>
             </div>
           </div>
         </section>
@@ -199,55 +243,86 @@ export default function HomePage() {
         <section id="about" className="section-y">
           <div className="container-max max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-              נעים להכיר, אני אורלי
+              בואו נכיר – אני אורלי, והסיפור שלי מתחיל בדיוק איפה שלך נגמר
             </h2>
 
             <div className="space-y-8">
               <div className="card p-8">
                 <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                  מי אני
+                  מי אני, ולמה אני כאן
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אני רו״ח עם 20 שנות ניסיון, ואני מאמנת עסקית. השילוב הזה בין
-                  מספרים לתודעה הוא מה שהופך את העבודה שלי לייחודית ויעילה.
+                  היי, אני אורלי. רואה חשבון עם 20 שנות ניסיון, אבל לא מהסוג
+                  הרגיל שאתה מכיר. אני כאן כי למדתי שהבעיה לא במספרים – הבעיה
+                  היא שאף אחד לא הסביר לך איך לחשוב על כסף בלי להרגיש כמו
+                  אידיוט.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  התחלתי את הדרך שלי כמו כל רואה חשבון רגיל – עם המספרים,
+                  הדוחות, והבירוקרטיה. אבל מהר מאוד הבנתי שיש משהו חסר. הלקוחות
+                  שלי היו מבולבלים, מפוחדים, ולא הבינו מה קורה עם הכסף שלהם. הם
+                  היו טובים במה שהם עושים, אבל הכסף הפך להיות משהו מפחיד
+                  ומסתורי.
                 </p>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  למדתי שהעסקים הכי מצליחים הם אלה שמשלבים בין סדר פיננסי לחשיבה
-                  תודעתית. זה לא רק על המספרים – זה על ההבנה העמוקה של מה שמניע
-                  אותך ומה מונע ממך.
+                  אז התחלתי לחפש פתרון. למדתי אימון עסקי, פסיכולוגיה של כסף,
+                  ואיך האמונות שלנו משפיעות על ההחלטות הפיננסיות שלנו. היום אני
+                  יודעת איך לחבר בין הסדר הפיננסי שצריך לבין התודעה שמונעת ממך
+                  להצליח באמת.
                 </p>
               </div>
 
               <div className="card p-8">
                 <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                  מה מיוחד בשילוב שלי
+                  מה הופך את העבודה שלי לשונה
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  פשוטות וגובה העיניים הם הבסיס שלי. אני לא מדברת בשפה מקצועית
-                  מורכבת – אני מסבירה הכל בפשטות, כי אני מאמינה שכשאתה מבין מה
-                  קורה, אתה יכול לקבל החלטות נכונות.
+                  אני לא מדברת אליך מלמעלה. אני לא אשתמש במונחים מקצועיים
+                  מורכבים שאתה לא מבין. אני לא אגיד לך "פשוט תהיה יותר מאורגן"
+                  או "פשוט תעבוד יותר קשה". אני יודעת שזה לא עובד.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  אני מדברת איתך כמו חברה טובה שמבינה מה אתה עובר. אני מסבירה
+                  הכל בפשטות, עם דוגמאות מהחיים, עם הומור, ועם הרבה סבלנות. אני
+                  יודעת שכשאתה מבין מה קורה, אתה יכול לקבל החלטות נכונות.
                 </p>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
                   השילוב בין אימון לכסף מאפשר לי לראות את התמונה המלאה – גם את
-                  המספרים וגם את האמונות והפחדים שמשפיעים על ההחלטות שלך.
+                  המספרים וגם את האמונות והפחדים שמשפיעים על ההחלטות שלך. אני לא
+                  רק אסדר לך את הניירת, אני אעזור לך להבין איך לחשוב על כסף
+                  בצורה שמקדמת אותך במקום לחסום אותך.
                 </p>
               </div>
 
               <div className="card p-8">
                 <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                  איך נראה שיתוף פעולה איתי
+                  איך נראה שיתוף הפעולה שלנו
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אנחנו מתחילים בשיחה ממוקדת שבה אני מבינה איפה אתה נמצא ומה
-                  חוסם אותך. יחד נבנה תוכנית פעולה שמשלבת סדר פיננסי עם פיתוח
-                  תודעה עסקית.
+                  אנחנו מתחילים בשיחה. לא בירוקרטיה, לא בטפסים, לא במונחים
+                  מקצועיים. בשיחה. אני רוצה לשמוע את הסיפור שלך – איפה אתה נמצא,
+                  מה מפחיד אותך, מה חוסם אותך, ומה אתה באמת רוצה להשיג.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  יחד נבנה תוכנית פעולה שמשלבת סדר פיננסי עם פיתוח תודעה עסקית.
+                  אני לא אדחוף עליך פתרונות שלא מתאימים לך. אני אקשיב, אבין,
+                  ואציע פתרונות שמתאימים בדיוק למצב שלך ולמטרות שלך.
                 </p>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
                   המטרה שלי היא לעזור לך ליצור סדר פיננסי שמאפשר לך להתמקד במה
                   שאתה הכי טוב בו – לתת שירות מעולה ללקוחות שלך. ביחד נפתח תודעה
-                  עסקית שמקדמת תוצאות אמיתיות.
+                  עסקית שמקדמת תוצאות אמיתיות. ואתה תדע בדיוק איך זה עובד.
                 </p>
               </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-[18px] text-[var(--ink)] mb-6">
+                נשמע לך כמו משהו שאתה רוצה לנסות? בואו נתחיל לדבר.
+              </p>
+              <a href="#contact" className="btn btn-primary">
+                אני רוצה להכיר אותך יותר טוב
+              </a>
             </div>
           </div>
         </section>
@@ -256,29 +331,38 @@ export default function HomePage() {
         <section id="services" className="section-y bg-[var(--paper)]">
           <div className="container-max">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-              השירותים שלי
+              איך אני יכולה לעזור לך? בואו נדבר על זה
             </h2>
 
             <div className="space-y-12">
               {/* שיחת מיקוד והכוונה - Main service */}
               <div className="card p-8">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 text-[var(--ink)]">
-                  שיחת מיקוד והכוונה
+                  שיחת מיקוד והכוונה – בואו נדבר על המצב שלך
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אני פוגשת הרבה בעלי עסקים שמרגישים אבודים – או בתחילת הדרך ולא
-                  יודעים מאיפה להתחיל, או באמצע הדרך ומרגישים שמשהו תקוע. בשיחה
-                  ממוקדת של שעה אנחנו עושים סדר: מה המצב כרגע, מה חוסם אותך, ומה
-                  הצעד הבא שלך כדי שהעסק יזרום ויתקדם. את/ה יוצא/ת עם בהירות
-                  ותוכנית פעולה פשוטה וברורה.
+                  אני פוגשת הרבה בעלי עסקים שמרגישים אבודים. הם יודעים שהם טובים
+                  במה שהם עושים, אבל משהו לא עובד. הם לא יודעים איפה הם עומדים,
+                  מה הצעד הבא, או איך להבין אם הם באמת מתקדמים.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  בשיחה ממוקדת של שעה אנחנו עושים סדר. אני אקשיב לסיפור שלך,
+                  אבין איפה אתה נמצא, ואז יחד נגלה מה באמת חוסם אותך. האם זה
+                  הבירוקרטיה? הפחד מהמספרים? האמונות על כסף? או משהו אחר לגמרי?
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  את/ה יוצא/ת מהשיחה עם בהירות מלאה על המצב הנוכחי, הבנה של מה
+                  חוסם אותך, ותוכנית פעולה פשוטה וברורה לצעד הבא. לא בירוקרטיה,
+                  לא מונחים מורכבים – רק בהירות ותוכנית שקל לך לעמוד בה.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] font-semibold mb-6">
+                  זה מתאים לך אם: אתה מרגיש אבוד, לא יודע איפה להתחיל, או מרגיש
+                  שמשהו תקוע אבל לא בטוח מה.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => selectService("focus")}
-                  >
+                  <a href="/services/focus" className="btn btn-primary">
                     אני רוצה שיחת מיקוד - ₪500
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -288,152 +372,243 @@ export default function HomePage() {
                   תהליך עומק – 4 מפגשים למציאת הייעוד שלך
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  יש בעלי עסקים שמרגישים שהם עובדים קשה אבל לא באמת מחוברים
-                  לייעוד שלהם. בתהליך של ארבעה מפגשים אני מלווה אותך צעד־צעד
-                  לגלות מה באמת חשוב לך, איזה אמונות על כסף ועסק עוצרות אותך,
-                  ואיך אפשר לבנות עסק שמרגיש נכון ומתאים לך. ביחד נבנה בהירות,
-                  כיוון ותוכנית שתאפשר לך לנהל עסק שאת/ה מחובר/ת אליו מכל הלב.
+                  יש בעלי עסקים שמרגישים שהם עובדים קשה אבל לא באמת מחוברים למה
+                  שהם עושים. הם יודעים שהם טובים, אבל משהו חסר. הם לא יודעים איך
+                  לבנות עסק שמרגיש נכון ומתאים להם, או איך להתחבר לייעוד שלהם.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  בתהליך של ארבעה מפגשים אני מלווה אותך צעד־צעד לגלות מה באמת
+                  חשוב לך. איזה אמונות על כסף ועסק עוצרות אותך? איך אתה יכול
+                  לבנות עסק שמרגיש נכון ומתאים לך? מה באמת מניע אותך, ומה מונע
+                  ממך להצליח?
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  ביחד נבנה בהירות, כיוון ותוכנית שתאפשר לך לנהל עסק שאתה מחובר
+                  אליו מכל הלב. לא רק עסק שמכניס כסף, אלא עסק שמרגיש נכון,
+                  שמתאים לך, ושמקדם אותך למקום שאתה באמת רוצה להיות בו.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] font-semibold mb-6">
+                  זה מתאים לך אם: אתה מרגיש שלא מחובר למה שאתה עושה, לא יודע מה
+                  הייעוד שלך, או רוצה לבנות עסק שמרגיש נכון ומתאים לך.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => selectService("four")}
-                  >
+                  <a href="/services/four" className="btn btn-primary">
                     אני רוצה להתחיל תהליך 4 מפגשים - ₪2,500
-                  </button>
+                  </a>
                 </div>
               </div>
 
               {/* שירותי ייצוג - Secondary service */}
               <div className="card p-8">
                 <h3 className="text-xl md:text-2xl font-bold mb-6 text-[var(--ink)]">
-                  שירותי ייצוג מול רשויות
+                  שירותי ייצוג מול רשויות – אני אטפל בכל הניירת הזו
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אני יודעת כמה מתסכל זה להתמודד עם רשויות המס, עם מכתבים שלא
-                  נגמרים ועם בירוקרטיה שגוזלת זמן ואנרגיה. במקום שתבזבז/י שעות
-                  ותלחץ/י מכל טופס שמגיע, אני מייצגת אותך מול הרשויות ודואגת שכל
-                  מה שצריך – יטופל בזמן ובצורה מסודרת. ככה את/ה יכול/ה להיות
-                  רגוע/ה ולשים את הפוקוס שלך איפה שבאמת חשוב – על העסק שלך.
+                  אני יודעת כמה מתסכל זה להתמודד עם רשויות המס. המכתבים שלא
+                  נגמרים, הטפסים שלא מבינים, הבירוקרטיה שגוזלת זמן ואנרגיה. אתה
+                  יודע שאתה צריך לטפל בזה, אבל כל פעם שאתה מביט בניירת הזו, הלב
+                  שלך עוצר.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  במקום שתבזבז שעות ותלחץ מכל טופס שמגיע, אני מייצגת אותך מול
+                  הרשויות. אני אטפל בכל הניירת, אדאג שכל מה שצריך יטופל בזמן
+                  ובצורה מסודרת, ואסביר לך בדיוק מה קורה בכל שלב.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
+                  ככה אתה יכול להיות רגוע, לשים את הפוקוס שלך איפה שבאמת חשוב –
+                  על העסק שלך – ולדעת שהניירת מטופלת על ידי מישהו שמבין בזה
+                  ויודע מה הוא עושה.
+                </p>
+                <p className="text-[18px] leading-8 text-[var(--ink)] font-semibold mb-6">
+                  זה מתאים לך אם: הניירת והבירוקרטיה מפחידות אותך, אתה לא יודע
+                  איך להתמודד עם רשויות המס, או רוצה שמישהו אחר יטפל בכל זה
+                  בשבילך.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => selectService("represent")}
-                  >
+                  <a href="/services/represent" className="btn btn-primary">
                     אני רוצה שאורלי תייצג אותי - ₪1,200
-                  </button>
+                  </a>
                 </div>
               </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-[18px] text-[var(--ink)] mb-6">
+                לא בטוח איזה שירות מתאים לך? בואו נדבר ונגלה יחד מה הכי נכון
+                עבורך.
+              </p>
+              <a href="#contact" className="btn btn-primary">
+                אני רוצה להתייעץ איתך
+              </a>
             </div>
           </div>
         </section>
 
         {/* Testimonials */}
-        <section className="section-y bg-[var(--paper)]">
+        <section className="section-y">
           <div className="container-max">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-              מה אומרים עליי
+              מה הלקוחות שלי אומרים – סיפורים אמיתיים מהלב
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="card p-8">
-                <p className="text-[var(--ink)] mb-4">
-                  "פחדתי מרשויות וממספרים, תמיד דחיתי ניירת. אורלי עשתה לי סדר
-                  ובפעם הראשונה אני רגוע/ה. היום יש לי תוכנית פעולה ואני
-                  בשליטה."
+                <p className="text-[var(--ink)] mb-6">
+                  "אני זוכרת את הרגע שהגעתי לאורלי. ישבתי במשרד שלה ובכתתי. 'אני
+                  מפחדת מהמספרים', אמרתי לה, 'אני מרגישה כמו אידיוט'. אורלי לא
+                  שפטה אותי, לא הסתכלה עליי מלמעלה. היא פשוט הקשיבה, הסבירה, ועם
+                  הזמן הפכה את הפחד שלי לביטחון. היום אני יודעת בדיוק מה קורה עם
+                  הכסף שלי, ואני לא מפחדת יותר."
                 </p>
                 <div className="text-sm text-[var(--rose-1)] font-semibold">
-                  — בעל עסק בתחום השירותים
+                  — דנה, מטפלת הוליסטית
                 </div>
               </div>
 
               <div className="card p-8">
-                <p className="text-[var(--ink)] mb-4">
-                  "הבנתי שאני מאמינה שכסף לא בשבילי. עם אורלי שיניתי את זה לאט
-                  ובבטחה, והעסק התחיל לזוז."
+                <p className="text-[var(--ink)] mb-6">
+                  "עבדתי עם אורלי על האמונות שלי על כסף. זה לא היה קל, אבל היא
+                  ליוותה אותי באהבה ובסבלנות. 'אתה ראוי להרוויח מה שאתה שווה',
+                  היא אמרה לי, ואני לא האמנתי לה. אבל היא הייתה צודקת. היום אני
+                  מרוויח פי שניים ממה שהרוויחתי קודם, ואני לא מרגיש אשמה על זה.
+                  אורלי לא רק עזרה לי עם הכסף – היא עזרה לי להבין מי אני באמת."
                 </p>
                 <div className="text-sm text-[var(--rose-1)] font-semibold">
-                  — עצמאית בתחום הייעוץ
+                  — רונן, יועץ עסקי
                 </div>
               </div>
 
               <div className="card p-8">
-                <p className="text-[var(--ink)] mb-4">
-                  "הרגשתי תקועה. השילוב של מספרים ותודעה אצל אורלי פשוט עבד —
-                  ברור, פשוט, אנושי."
+                <p className="text-[var(--ink)] mb-6">
+                  "הרגשתי תקועה. עבדתי קשה, אבל לא ראיתי תוצאות. אורלי עזרה לי
+                  להבין שהבעיה לא במספרים – הבעיה הייתה בדרך שבה אני חושבת על
+                  העסק שלי. השילוב שלה בין מספרים לתודעה פשוט עבד. היום אני
+                  עובדת פחות שעות, מרוויחה יותר, והעסק שלי צומח כל חודש. אורלי
+                  לא רק עזרה לי עם הכסף – היא עזרה לי למצוא את הייעוד שלי."
                 </p>
                 <div className="text-sm text-[var(--rose-1)] font-semibold">
-                  — בעלת עסק בתחום הטכנולוגיה
+                  — מירי, מאמנת אישית
                 </div>
               </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-[18px] text-[var(--ink)] mb-6">
+                נשמע לך מוכר? אם אתה מרגיש כמו אחד מהסיפורים האלה, בואו נדבר.
+              </p>
+              <a href="#contact" className="btn btn-primary">
+                אני רוצה להיות הסיפור הבא שלך
+              </a>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="section-y">
+        <section id="faq" className="section-y bg-[var(--paper)]">
           <div className="container-max max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-              שאלות נפוצות
+              שאלות ששואלים אותי הרבה – בואו נדבר על זה בכנות
             </h2>
 
             <div className="space-y-8">
               <div className="card p-8">
                 <h3 className="text-xl font-bold mb-4 text-[var(--ink)]">
-                  מה קורה בשיחה הראשונה?
+                  מה באמת קורה בשיחה הראשונה? אני קצת חושש...
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  בשיחה הראשונה אנחנו נכיר, אני אבין איפה אתה נמצא מבחינה עסקית
-                  ופיננסית, ואנחנו נחליט יחד על הכיוון הנכון עבורך. את/ה יוצא/ת
-                  עם בהירות על המצב הנוכחי ועל הצעדים הבאים.
+                  אני מבינה את החשש. הרבה אנשים מגיעים אליי עם פחד – פחד
+                  מהשיפוט, פחד שלא יבינו אותם, פחד שהם לא מספיק טובים. בשיחה
+                  הראשונה אני רוצה שתדע שאתה במקום בטוח. אני אקשיב לסיפור שלך,
+                  לא אשפט אותך, ולא אגיד לך "פשוט תהיה יותר מאורגן". אני רוצה
+                  להבין איפה אתה נמצא, מה מפחיד אותך, ומה אתה באמת רוצה להשיג.
+                  את/ה יוצא/ת עם בהירות על המצב הנוכחי ועל הצעדים הבאים – לא עם
+                  עוד רשימה של דברים לעשות.
                 </p>
               </div>
 
               <div className="card p-8">
                 <h3 className="text-xl font-bold mb-4 text-[var(--ink)]">
-                  האם יש ליווי רק פיננסי או גם תודעתי?
+                  אני מבולבל – זה ייעוץ פיננסי או אימון? מה בדיוק אני אקבל?
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  אני משלבה בין שני התחומים. סדר פיננסי בלבד לא מספיק – צריך גם
-                  לעבוד על התודעה והאמונות שמשפיעות על ההחלטות שלך. השילוב בין
-                  מספרים לתודעה הוא מה שיוצר תוצאות אמיתיות.
+                  זה שאלה מעולה, ואני מבינה את הבלבול. אני משלבת בין שני התחומים
+                  כי למדתי שהבעיה לא רק במספרים – הבעיה גם באמונות ובפחדים
+                  שמשפיעים על ההחלטות שלך. אני לא רק אסדר לך את הניירת ואסביר את
+                  המספרים, אני גם אעזור לך להבין איך לחשוב על כסף בצורה שמקדמת
+                  אותך במקום לחסום אותך. השילוב הזה הוא מה שיוצר תוצאות אמיתיות
+                  – לא רק סדר זמני, אלא שינוי אמיתי בדרך שבה אתה מתמודד עם כסף
+                  ועסק.
                 </p>
               </div>
 
               <div className="card p-8">
                 <h3 className="text-xl font-bold mb-4 text-[var(--ink)]">
-                  למי זה מתאים?
+                  אני לא יודע אם זה מתאים לי. מי הלקוחות שלך?
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  בעיקר לבעלי עסקים בתחומי השירות – מטפלים, מאמנים, יועצים,
-                  עורכי דין, רואי חשבון. גם למי שנותן שירותים או מייעץ לאנשים
-                  אחרים. אם אתה מרגיש תקוע או לא בטוח איפה אתה עומד מבחינה
-                  פיננסית – זה בדיוק בשבילך.
+                  הלקוחות שלי הם אנשים כמוך – בעלי עסקים בתחומי השירות שמרגישים
+                  שהם טובים במה שהם עושים אבל משהו לא עובד. מטפלים שמפחדים
+                  מהמספרים, מאמנים שלא יודעים איך לתמחר, יועצים שמרגישים תקועים,
+                  עורכי דין שמבולבלים מהבירוקרטיה. אם אתה מרגיש תקוע, אם אתה לא
+                  בטוח איפה אתה עומד מבחינה פיננסית, אם אתה מפחד מהמספרים או
+                  מהרשויות – זה בדיוק בשבילך. אני לא עובדת עם תאגידים גדולים או
+                  עם אנשים שכבר הכל מושלם אצלם – אני עובדת עם אנשים כמוך.
                 </p>
               </div>
 
               <div className="card p-8">
                 <h3 className="text-xl font-bold mb-4 text-[var(--ink)]">
-                  כמה זמן לוקח התהליך?
+                  כמה זמן זה לוקח? אני לא רוצה תהליך אינסופי
                 </h3>
                 <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  זה תלוי במה שאנחנו עובדים עליו. יש שיחת מיקוד חד-פעמית של שעה,
-                  ויש תהליך של 4 מפגשים למציאת הייעוד. גם שירותי הייצוג הם לפי
-                  הצורך. אני לא דוחפת תהליכים מיותרים – רק מה שבאמת עוזר לך.
+                  אני מבינה את החשש – אף אחד לא רוצה להיכנס לתהליך שלא נגמר. זה
+                  תלוי במה שאנחנו עובדים עליו. יש שיחת מיקוד חד-פעמית של שעה
+                  שאמורה לתת לך בהירות ותוכנית פעולה. יש תהליך של 4 מפגשים
+                  למציאת הייעוד שלך. יש שירותי ייצוג שהם לפי הצורך. אני לא דוחפת
+                  עליך תהליכים מיותרים – רק מה שבאמת עוזר לך. המטרה שלי היא
+                  שתרגיש טוב עם הכסף שלך ותדע איך להמשיך לבד, לא שתהיה תלוי בי
+                  לנצח.
                 </p>
               </div>
+
+              <div className="card p-8">
+                <h3 className="text-xl font-bold mb-4 text-[var(--ink)]">
+                  אני לא מבין כלום במספרים – זה בסדר?
+                </h3>
+                <p className="text-[18px] leading-8 text-[var(--ink)]">
+                  זה בסדר לגמרי! למעשה, רוב הלקוחות שלי מגיעים אליי בדיוק בגלל
+                  זה. הם מרגישים כמו אידיוטים כשהם מביטים בגיליון אקסל או בדוח
+                  כספי. אני כאן כדי לשנות את זה. אני אסביר לך הכל בפשטות, עם
+                  דוגמאות מהחיים, בלי מונחים מקצועיים מורכבים. המטרה שלי היא
+                  שתבין מה קורה עם הכסף שלך ותרגיש שליטה, לא שתרגיש כמו אידיוט.
+                  זה בסדר לא להבין – זה לא בסדר להישאר במצב הזה.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-[18px] text-[var(--ink)] mb-6">
+                יש לך עוד שאלות? בואו נדבר – אני כאן כדי לענות על כל השאלות שלך.
+              </p>
+              <a href="#contact" className="btn btn-primary">
+                יש לי שאלה נוספת
+              </a>
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="section-y bg-[var(--paper)]">
+        <section id="contact" className="section-y">
           <div className="container-max">
             <div className="max-w-2xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[var(--ink)]">
-                השאירו פרטים ואני חוזרת לתאם שיחה
+                בואו נתחיל לדבר – השאירו פרטים ואני חוזרת אליכם
               </h2>
+              <p className="text-[18px] text-[var(--ink)] opacity-70">
+                אני יודעת שזה לא קל להגיע לכאן. אני יודעת שאתה אולי חושש, מתלבט,
+                או לא בטוח אם זה מתאים לך. זה בסדר. בואו נתחיל בשיחה פשוטה – אני
+                אקשיב, אבין, ואעזור לך להבין אם זה נכון עבורך.
+              </p>
             </div>
 
             <div className="max-w-2xl mx-auto">
@@ -445,69 +620,21 @@ export default function HomePage() {
         </section>
 
         {/* Final CTA */}
-        <section className="section-y">
+        <section className="section-y bg-[var(--paper)]">
           <div className="container-max text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[var(--ink)]">
               בואו נעשה סדר וצמיחה – ביחד
             </h2>
+            <p className="text-[18px] text-[var(--ink)] mb-8 max-w-2xl mx-auto">
+              אני כאן כדי לעזור לך לישון טוב בלילה, להיות רגוע עם הכסף שלך,
+              ולהפסיק לפחד מהרשויות. בואו נתחיל לדבר ונגלה יחד איך אפשר לעשות את
+              זה.
+            </p>
             <a href="#contact" className="btn btn-primary">
-              קבעו שיחת ייעוץ
+              בואו נתחיל לדבר – קבעו שיחת ייעוץ
             </a>
           </div>
         </section>
-
-        {/* Payment Modal */}
-        {showPayment && selectedService && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="card p-8 max-w-md w-full">
-              <h3 className="text-2xl font-bold mb-4 text-[var(--ink)]">
-                אישור הזמנה
-              </h3>
-              <div className="mb-6">
-                <p className="text-lg font-semibold text-[var(--ink)]">
-                  {services[selectedService].name}
-                </p>
-                <p className="text-[var(--ink)]">
-                  {services[selectedService].description}
-                </p>
-                <p className="text-xl font-bold text-[var(--rose-1)] mt-2">
-                  ₪{services[selectedService].price}
-                </p>
-              </div>
-              <div className="flex gap-4">
-                <button
-                  onClick={handlePayment}
-                  className="btn btn-primary flex-1"
-                >
-                  אישור תשלום
-                </button>
-                <button
-                  onClick={() => setShowPayment(false)}
-                  className="btn btn-ghost flex-1"
-                >
-                  ביטול
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* Client Questionnaire Modal */}
-        {showQuestionnaire && selectedService && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="card p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                שאלון לקוח - {services[selectedService].name}
-              </h3>
-
-              <ClientQuestionnaire
-                serviceType={selectedService}
-                onSubmit={handleQuestionnaireSubmit}
-                onCancel={() => setShowQuestionnaire(false)}
-              />
-            </div>
-          </div>
-        )}
 
         {/* Footer */}
         <footer className="bg-[var(--ink)] text-white py-12">
