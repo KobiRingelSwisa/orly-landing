@@ -36,7 +36,7 @@ export default function FocusServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה אתה השיחה הזו - ₪500
                 </a>
-                <Link href="/orly-landing/services" className="btn btn-ghost">
+                <Link href="/orly-landing/" className="btn btn-ghost">
                   חזרה לשירותים
                 </Link>
               </div>
@@ -383,7 +383,7 @@ export default function FocusServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה אתה השיחה הזו - ₪500
                 </a>
-                <Link href="/orly-landing/services" className="btn btn-ghost">
+                <Link href="/orly-landing/" className="btn btn-ghost">
                   חזרה לשירותים
                 </Link>
               </div>

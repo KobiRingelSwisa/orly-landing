@@ -36,7 +36,7 @@ export default function RepresentationServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה שאורלי תייצג אותי - ₪1,200
                 </a>
-                <Link href="/orly-landing/services" className="btn btn-ghost">
+                <Link href="/orly-landing/" className="btn btn-ghost">
                   חזרה לשירותים
                 </Link>
               </div>
@@ -514,7 +514,7 @@ export default function RepresentationServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה שאורלי תייצג אותי - ₪1,200
                 </a>
-                <Link href="/orly-landing/services" className="btn btn-ghost">
+                <Link href="/orly-landing/" className="btn btn-ghost">
                   חזרה לשירותים
                 </Link>
               </div>
