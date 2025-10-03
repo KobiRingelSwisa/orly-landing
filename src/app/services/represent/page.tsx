@@ -2,6 +2,7 @@
 
 import { Header } from "@/components/header";
 import { ContactForm } from "@/components/contact-form";
+import Link from 'next/link';
 
 export default function RepresentationServicePage() {
   return (
@@ -546,7 +547,7 @@ export default function RepresentationServicePage() {
 
       {/* Floating Back Button */}
       <div className="fixed bottom-6 left-6 z-50">
-        <a
+        <Link
           href="/"
           className="flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white text-[var(--ink)] font-medium"
         >
@@ -565,7 +566,7 @@ export default function RepresentationServicePage() {
             />
           </svg>
           חזור לדף הבית
-        </a>
+        </Link>
       </div>
     </>
   );
