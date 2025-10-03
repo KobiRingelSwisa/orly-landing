@@ -36,7 +36,7 @@ export default function FocusServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה אתה השיחה הזו - ₪500
                 </a>
-                <Link href="/orly-landing/" className="btn btn-ghost">
+                <Link href="/" className="btn btn-ghost">
                   חזרה לשירותים
                 </Link>
               </div>
@@ -383,7 +383,7 @@ export default function FocusServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה אתה השיחה הזו - ₪500
                 </a>
-                <Link href="/orly-landing/" className="btn btn-ghost">
+                <Link href="/" className="btn btn-ghost">
                   חזרה לשירותים
                 </Link>
               </div>
@@ -419,7 +419,7 @@ export default function FocusServicePage() {
       {/* Floating Back Button */}
       <div className="fixed bottom-6 left-6 z-50">
         <Link
-          href="/orly-landing/"
+          href="/"
           className="flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white text-[var(--ink)] font-medium"
         >
           <svg

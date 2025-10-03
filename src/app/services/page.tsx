@@ -69,7 +69,7 @@ export default function ServicesPage() {
                   ותוכנית פעולה פשוטה וברורה לחופש אמיתי.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/orly-landing/contact" className="btn btn-primary">
+                  <a href="/contact" className="btn btn-primary">
                     אני רוצה שיחת מיקוד
                   </a>
                   <a
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                   כיוון ותוכנית שתאפשר לך לחיות את החיים שחלמת עליהם.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/orly-landing/contact" className="btn btn-primary">
+                  <a href="/contact" className="btn btn-primary">
                     אני רוצה להתחיל תהליך 4 מפגשים
                   </a>
                 </div>
@@ -116,7 +116,7 @@ export default function ServicesPage() {
                   ולשים את הפוקוס שלך איפה שבאמת חשוב – על החיים שחלמת עליהם.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/orly-landing/contact" className="btn btn-primary">
+                  <a href="/contact" className="btn btn-primary">
                     אני רוצה ליווי כולל לחופש כלכלי
                   </a>
                   <a

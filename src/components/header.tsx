@@ -27,31 +27,31 @@ export function Header() {
           <Logo />
           <nav className="hidden md:flex items-center gap-8">
             <Link
-              href="/orly-landing/"
+              href="/"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               בית
             </Link>
             <Link
-              href="/orly-landing/about"
+              href="/about"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               אודות
             </Link>
             <Link
-              href="/orly-landing/services"
+              href="/services"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               שירותים
             </Link>
             <Link
-              href="/orly-landing/contact"
+              href="/contact"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               יצירת קשר
             </Link>
             <Link
-              href="/orly-landing/faq"
+              href="/faq"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               שאלות נפוצות

@@ -361,7 +361,7 @@ export default function HomePage() {
                   או מרגיש שחסר לך משהו בחיים אבל לא בטוח מה.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/orly-landing/services/focus" className="btn btn-primary">
+                  <a href="/services/focus" className="btn btn-primary">
                     אני רוצה שיחת מיקוד - ₪500
                   </a>
                 </div>
@@ -393,7 +393,7 @@ export default function HomePage() {
                   או מרגיש שאתה לא מגיע למקום שאתה רוצה להיות בו בחיים.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/orly-landing/services/four" className="btn btn-primary">
+                  <a href="/services/four" className="btn btn-primary">
                     אני רוצה להתחיל תהליך 4 מפגשים - ₪2,500
                   </a>
                 </div>
@@ -426,7 +426,7 @@ export default function HomePage() {
                   או רוצה שמישהו אחר יטפל בכל זה בשבילך וילווה אותך בדרך לחופש אמיתי.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/orly-landing/services/represent" className="btn btn-primary">
+                  <a href="/services/represent" className="btn btn-primary">
                     אני רוצה שאורלי תייצג אותי - ₪1,200
                   </a>
                 </div>
@@ -661,7 +661,7 @@ export default function HomePage() {
                 <ul className="space-y-2 text-gray-300">
                   <li>
                     <a
-                      href="/orly-landing/about"
+                      href="/about"
                       className="hover:text-[var(--rose-2)] transition-colors"
                     >
                       אודות
@@ -669,7 +669,7 @@ export default function HomePage() {
                   </li>
                   <li>
                     <a
-                      href="/orly-landing/services"
+                      href="/services"
                       className="hover:text-[var(--rose-2)] transition-colors"
                     >
                       שירותים
@@ -677,7 +677,7 @@ export default function HomePage() {
                   </li>
                   <li>
                     <a
-                      href="/orly-landing/contact"
+                      href="/contact"
                       className="hover:text-[var(--rose-2)] transition-colors"
                     >
                       יצירת קשר
@@ -685,7 +685,7 @@ export default function HomePage() {
                   </li>
                   <li>
                     <a
-                      href="/orly-landing/faq"
+                      href="/faq"
                       className="hover:text-[var(--rose-2)] transition-colors"
                     >
                       שאלות נפוצות

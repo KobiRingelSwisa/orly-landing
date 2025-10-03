@@ -84,7 +84,7 @@ export function HeroSection() {
               <button onClick={goToContact} className="btn-primary">
                 קבעו שיחת ייעוץ
               </button>
-              <a href="/orly-landing/about" className="btn-outline">
+              <a href="/about" className="btn-outline">
                 רוצה לשמוע בקצרה מה עושים כאן؟
               </a>
             </div>

@@ -143,7 +143,7 @@ export default function FAQPage() {
                   לתאם שיחה ראשונה. בשיחה נחליט יחד מה הכי נכון עבורכם.
                 </p>
                 <div className="mt-6">
-                  <a href="/orly-landing/contact" className="btn btn-primary">
+                  <a href="/contact" className="btn btn-primary">
                     בואו נתחיל
                   </a>
                 </div>
