@@ -39,7 +39,7 @@ export function Header() {
               אודות
             </Link>
             <Link
-              href="/services"
+              href="/orly-landing/services"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               שירותים
