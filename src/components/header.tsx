@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Logo } from "./logo";
+import Link from "next/link";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,36 +26,36 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Logo />
           <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#hero"
+            <Link
+              href="/orly-landing/"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               בית
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/orly-landing/about"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               אודות
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              href="/orly-landing/services"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               שירותים
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/orly-landing/contact"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               יצירת קשר
-            </a>
-            <a
-              href="#faq"
+            </Link>
+            <Link
+              href="/orly-landing/faq"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               שאלות נפוצות
-            </a>
+            </Link>
           </nav>
           <a href="#contact" className="btn btn-primary">
             קבעו שיחת ייעוץ

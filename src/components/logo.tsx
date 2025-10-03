@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
+
 export function Logo() {
   return (
-    <div className="flex items-center gap-3">
+    <Link href="/orly-landing/" className="flex items-center gap-3">
       {/* Logo Image without background */}
       <div className="relative">
         <img
@@ -21,6 +23,6 @@ export function Logo() {
           }}
         />
       </div>
-    </div>
+    </Link>
   );
 }

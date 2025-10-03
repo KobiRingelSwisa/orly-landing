@@ -669,7 +669,7 @@ export default function HomePage() {
                   </li>
                   <li>
                     <a
-                      href="/services"
+                      href="/orly-landing/services"
                       className="hover:text-[var(--rose-2)] transition-colors"
                     >
                       שירותים
