@@ -36,9 +36,9 @@ export default function FourSessionsPage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה להתחיל אתה התהליך - ₪2,500
                 </a>
-                <a href="/services" className="btn btn-ghost">
+                <Link href="/orly-landing/services" className="btn btn-ghost">
                   חזרה לשירותים
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -425,9 +425,9 @@ export default function FourSessionsPage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה להתחיל אתה התהליך - ₪2,500
                 </a>
-                <a href="/services" className="btn btn-ghost">
+                <Link href="/orly-landing/services" className="btn btn-ghost">
                   חזרה לשירותים
-                </a>
+                </Link>
               </div>
 
               <p className="text-sm text-[var(--ink)] opacity-70 mt-6">

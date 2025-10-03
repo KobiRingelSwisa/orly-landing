@@ -36,9 +36,9 @@ export default function RepresentationServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה שאורלי תייצג אותי - ₪1,200
                 </a>
-                <a href="/services" className="btn btn-ghost">
+                <Link href="/orly-landing/services" className="btn btn-ghost">
                   חזרה לשירותים
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -514,9 +514,9 @@ export default function RepresentationServicePage() {
                 <a href="#contact" className="btn btn-primary">
                   אני רוצה שאורלי תייצג אותי - ₪1,200
                 </a>
-                <a href="/services" className="btn btn-ghost">
+                <Link href="/orly-landing/services" className="btn btn-ghost">
                   חזרה לשירותים
-                </a>
+                </Link>
               </div>
 
               <p className="text-sm text-[var(--ink)] opacity-70 mt-6">
