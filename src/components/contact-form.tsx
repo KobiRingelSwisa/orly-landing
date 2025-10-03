@@ -136,7 +136,7 @@ export function ContactForm() {
         </button>
 
         <p className="text-xs text-center text-gray-500">
-          לא שולחת ספאם. הפרטים נשארים אצלי.
+          לא שולחים ספאם. הפרטים נשארים אצלי.
         </p>
       </form>
     </div>

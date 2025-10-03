@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header";
 import { ContactForm } from "@/components/contact-form";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function RepresentationServicePage() {
   return (
@@ -16,20 +16,20 @@ export default function RepresentationServicePage() {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8">
                 <span className="gradient-text">
-                  היי, בואי נפטור מהניירת הזו אחת ולתמיד
+                  היי, בואו נפטור מהניירת הזו אחת ולתמיד
                 </span>
               </h1>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8">
-                תחשבי על זה רגע... איזה מטורף זה - שאת עובדת קשה, יודעת שאת טובה
-                במה שאת עושה, אבל כל פעם שמגיע מכתב מהרשויות הלב שלך עוצר.
+                תחשוב על זה רגע... איזה מטורף זה - שאתה עובד קשה, יודע שאתה טוב
+                במה שאתה עושה, אבל כל פעם שמגיע מכתב מהרשויות הלב שלך עוצר.
                 הטופסים, המספרים, הבירוקרטיה - הכל מבלבל ומפחיד.
               </p>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8">
-                אני יודעת בדיוק איך את מרגישה. פגשתי מאות בעלי עסקים שמרגישים
+                אני יודעת בדיוק איך אתה מרגיש. פגשתי מאות בעלי עסקים שמרגישים
                 בדיוק ככה. והחדשות הטובות? אני אטפל בכל זה בשבילך – מייצגת אותך
-                מול הרשויות, מסדרת את הניירת, ומאפשרת לך להיות רגועה.
+                מול הרשויות, מסדרת אתה הניירת, ומאפשרת לך להיות רגוע.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -55,10 +55,10 @@ export default function RepresentationServicePage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    אם אתה מרגיש ככה, את/ה לא לבד:
+                    אם אתה מרגיש ככה, אתה/ה לא לבד:
                   </h3>
                   <ul className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
-                    <li>• "אני מפחד לפתוח את המכתבים מהמס"</li>
+                    <li>• "אני מפחד לפתוח אתה המכתבים מהמס"</li>
                     <li>• "הניירת הצטברה ואני לא יודע מה לעשות"</li>
                     <li>• "אני מבולבל מכל הטפסים והדוחות"</li>
                     <li>• "אני לא יודע איך להתמודד עם הרשויות"</li>
@@ -101,8 +101,9 @@ export default function RepresentationServicePage() {
                     📋 סידור הניירת הקיימת
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
-                    אני לוקחת את כל הניירת שלך – המכתבים, הטפסים, הדוחות – ועושה
-                    סדר מושלם. אני בודקת מה חסר, מה צריך לטפל בו, ומה כבר בסדר.
+                    אני לוקחת אתה כל הניירת שלך – המכתבים, הטפסים, הדוחות –
+                    ועושה סדר מושלם. אני בודקת מה חסר, מה צריך לטפל בו, ומה כבר
+                    בסדר.
                   </p>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
                     אתה תקבל דוח מפורט על המצב הנוכחי ותדע בדיוק מה קורה.
@@ -128,8 +129,9 @@ export default function RepresentationServicePage() {
                     📊 הכנת דוחות וטפסים
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
-                    אני מכינה בשבילך את כל הדוחות הנדרשים – דוח שנתי, דוח חודשי,
-                    טפסי ביטוח לאומי, וכל מה שצריך. הכל בזמן ובצורה נכונה.
+                    אני מכינה בשבילך אתה כל הדוחות הנדרשים – דוח שנתי, דוח
+                    חודשי, טפסי ביטוח לאומי, וכל מה שצריך. הכל בזמן ובצורה
+                    נכונה.
                   </p>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
                     אתה תקבל עותק של הכל ותדע בדיוק מה נשלח ומתי.
@@ -145,7 +147,7 @@ export default function RepresentationServicePage() {
                     איך לנהל משא ומתן, איך להגיש בקשות להקלות, ואיך לפתור בעיות.
                   </p>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    אני אעזור לך להגיע להסדרים טובים ולהפחית את החובות שלך.
+                    אני אעזור לך להגיע להסדרים טובים ולהפחית אתה החובות שלך.
                   </p>
                 </div>
 
@@ -186,7 +188,7 @@ export default function RepresentationServicePage() {
                           פגישה ראשונה
                         </h3>
                         <p className="text-[var(--ink)]">
-                          נפגשים, אני מבינה את המצב שלך, ולוקחת את כל הניירת
+                          נפגשים, אני מבינה אתה המצב שלך, ולוקחת אתה כל הניירת
                         </p>
                       </div>
                     </div>
@@ -363,9 +365,9 @@ export default function RepresentationServicePage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
-                    "הייתי מפחד לפתוח את המכתבים מהמס. הניירת הצטברה ואני לא
-                    ידעתי מה לעשות. אורלי לקחה את הכל, סידרה, וטיפלה בכל הבעיות.
-                    היום אני רגוע לגמרי!"
+                    "הייתי מפחד לפתוח אתה המכתבים מהמס. הניירת הצטברה ואני לא
+                    ידעתי מה לעשות. אורלי לקחה אתה הכל, סידרה, וטיפלה בכל
+                    הבעיות. היום אני רגוע לגמרי!"
                   </p>
                   <div className="text-sm text-[var(--rose-1)] font-semibold">
                     — יעל, מטפלת הוליסטית
@@ -375,8 +377,8 @@ export default function RepresentationServicePage() {
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
                     "היו לי חובות שלא ידעתי איך לטפל בהם. אורלי עזרה לי להגיע
-                    להסדרים טובים ולהפחית את החובות. היא מייצגת אותי מול הרשויות
-                    ואני רגוע!"
+                    להסדרים טובים ולהפחית אתה החובות. היא מייצגת אותי מול
+                    הרשויות ואני רגוע!"
                   </p>
                   <div className="text-sm text-[var(--rose-1)] font-semibold">
                     — משה, יועץ עסקי
@@ -385,8 +387,8 @@ export default function RepresentationServicePage() {
 
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
-                    "הבירוקרטיה חונקה אותי. אורלי לקחה את הכל לידיים שלה, סידרה
-                    את הניירת, ומטפלת בכל מה שצריך. אני יכול להתמקד בעסק שלי!"
+                    "הבירוקרטיה חונקה אותי. אורלי לקחה אתה הכל לידיים שלה, סידרה
+                    אתה הניירת, ומטפלת בכל מה שצריך. אני יכול להתמקד בעסק שלי!"
                   </p>
                   <div className="text-sm text-[var(--rose-1)] font-semibold">
                     — דני, מאמן אישי
@@ -433,7 +435,7 @@ export default function RepresentationServicePage() {
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
                     זה תלוי בכמות הניירת ובמורכבות הבעיות. בדרך כלל תוך
-                    שבועיים-שלושה אני מסיימת את הסידור הראשוני ומתחילה בטיפול
+                    שבועיים-שלושה אני מסיימת אתה הסידור הראשוני ומתחילה בטיפול
                     הפעיל.
                   </p>
                 </div>

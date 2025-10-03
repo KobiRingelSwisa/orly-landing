@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header";
 import { ContactForm } from "@/components/contact-form";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function FourSessionsPage() {
   return (
@@ -16,25 +16,25 @@ export default function FourSessionsPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8">
                 <span className="gradient-text">
-                  היי, בואי נגלה יחד את הייעוד האמיתי שלך
+                  היי, בואו נגלה יחד אתה הייעוד האמיתי שלך
                 </span>
               </h1>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8">
-                תחשבי על זה רגע... את עובדת קשה, יודעת שאת טובה במה שאת עושה,
-                אבל מרגישה שלא באמת מחוברת למה שאת עושה. כמו שאת עובדת על משהו
+                תחשוב על זה רגע... אתה עובד קשה, יודע שאתה טוב במה שאתה עושה,
+                אבל מרגיש שלא באמת מחובר למה שאתה עושה. כמו שאתה עובד על משהו
                 שמישהו אחר אמר לך שצריך לעשות, ולא על משהו שבאמת מרגש אותך.
               </p>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8">
-                אני יודעת בדיוק איך את מרגישה. פגשתי מאות בעלי עסקים שמרגישים
+                אני יודעת בדיוק איך אתה מרגיש. פגשתי מאות בעלי עסקים שמרגישים
                 בדיוק ככה. והחדשות הטובות? בתהליך של ארבעה מפגשים אני מלווה אותך
                 צעד־צעד לגלות מה באמת חשוב לך ולבנות עסק שמרגיש נכון ומתאים לך.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contact" className="btn btn-primary">
-                  אני רוצה להתחיל את התהליך - ₪2,500
+                  אני רוצה להתחיל אתה התהליך - ₪2,500
                 </a>
                 <a href="/services" className="btn btn-ghost">
                   חזרה לשירותים
@@ -55,7 +55,7 @@ export default function FourSessionsPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    הסימנים שאתה צריך את התהליך:
+                    הסימנים שאתה צריך אתה התהליך:
                   </h3>
                   <ul className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
                     <li>• "אני עובד קשה אבל לא מרגיש סיפוק"</li>
@@ -107,8 +107,8 @@ export default function FourSessionsPage() {
                       </h3>
                       <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
                         נעמיק יחד בהבנה של מי אתה באמת, מה מניע אותך, ומה חשוב
-                        לך בחיים. נגלה את הערכים הבסיסיים שלך, את החלומות שלך,
-                        ואת מה שאתה באמת רוצה להשיג.
+                        לך בחיים. נגלה אתה הערכים הבסיסיים שלך, אתה החלומות שלך,
+                        ואתה מה שאתה באמת רוצה להשיג.
                       </p>
                       <p className="text-[18px] leading-8 text-[var(--ink)]">
                         נבין מה עוצר אותך, מה הפחדים שלך, ואיך האמונות שלך
@@ -147,7 +147,7 @@ export default function FourSessionsPage() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold mb-4 text-[var(--ink)]">
-                        מפגש שלישי: מציאת הייעוד ובניית החזון
+                        מפגש שלישי: מציאתה הייעוד ובניית החזון
                       </h3>
                       <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
                         נגלה יחד מה הייעוד שלך, מה השליחות שלך, ואיך אתה רוצה
@@ -171,13 +171,13 @@ export default function FourSessionsPage() {
                         מפגש רביעי: בניית התוכנית ויציאה לדרך
                       </h3>
                       <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
-                        נבנה יחד תוכנית פעולה מפורטת שתאפשר לך לממש את החזון
+                        נבנה יחד תוכנית פעולה מפורטת שתאפשר לך לממש אתה החזון
                         שלך. התוכנית תהיה מותאמת בדיוק לך, למטרות שלך, ולמצב
                         הנוכחי שלך.
                       </p>
                       <p className="text-[18px] leading-8 text-[var(--ink)]">
-                        נסיים עם העצמה מלאה ומוטיבציה ענקית לצאת לדרך ולהתחיל
-                        לממש את החלום שלך.
+                        נסיים עם העצמה מלאה ומוטיבציה ענקית לצאתה לדרך ולהתחיל
+                        לממש אתה החלום שלך.
                       </p>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ export default function FourSessionsPage() {
                     תוכנית פעולה
                   </h3>
                   <p className="text-[var(--ink)]">
-                    תוכנית מפורטת ומותאמת אישית לממש את החזון שלך
+                    תוכנית מפורטת ומותאמת אישית לממש אתה החזון שלך
                   </p>
                 </div>
 
@@ -252,7 +252,7 @@ export default function FourSessionsPage() {
                     אנרגיה ומוטיבציה
                   </h3>
                   <p className="text-[var(--ink)]">
-                    אנרגיה חדשה ומוטיבציה ענקית לצאת לדרך ולהצליח
+                    אנרגיה חדשה ומוטיבציה ענקית לצאתה לדרך ולהצליח
                   </p>
                 </div>
               </div>
@@ -265,13 +265,13 @@ export default function FourSessionsPage() {
           <div className="container-max">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-                מה אומרים לקוחות שעברו את התהליך?
+                מה אומרים לקוחות שעברו אתה התהליך?
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
-                    "התהליך הזה שינה לי את החיים. לא ידעתי מי אני באמת ומה חשוב
+                    "התהליך הזה שינה לי אתה החיים. לא ידעתי מי אני באמת ומה חשוב
                     לי. אחרי 4 המפגשים עם אורלי, יש לי בהירות מלאה, חזון ברור,
                     ואני מרגיש מחובר עמוק למה שאני עושה. העסק שלי עכשיו מרגיש
                     נכון ומתאים לי מכל הלב!"
@@ -284,7 +284,7 @@ export default function FourSessionsPage() {
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
                     "עבדתי קשה שנים אבל לא הרגשתי סיפוק. אורלי עזרה לי להבין מה
-                    באמת חשוב לי ולגלות את הייעוד שלי. היום יש לי עסק שמרגיש
+                    באמת חשוב לי ולגלות אתה הייעוד שלי. היום יש לי עסק שמרגיש
                     נכון, אני מרוויח יותר, ואני מרגיש מלא אנרגיה ומוטיבציה.
                     התהליך הזה היה שווה כל שקל!"
                   </p>
@@ -295,7 +295,7 @@ export default function FourSessionsPage() {
 
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
-                    "הייתי מפחד מכסף ומהצלחה. התהליך עם אורלי עזר לי לשנות את
+                    "הייתי מפחד מכסף ומהצלחה. התהליך עם אורלי עזר לי לשנות אתה
                     האמונות שלי ולבנות מערכת יחסים חדשה עם כסף. עכשיו אני לא
                     מפחד יותר, ואני יודע איך לבנות עסק מצליח שמתאים לי!"
                   </p>
@@ -353,9 +353,9 @@ export default function FourSessionsPage() {
                     מה אם אני לא יודע מה לענות על השאלות?
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    אין בעיה! אני אעזור לך לגלות את התשובות. זה חלק מהתהליך. אני
-                    אשאל את השאלות הנכונות ואעזור לך להבין ולהביע את מה שאתה
-                    מרגיש.
+                    אין בעיה! אני אעזור לך לגלות אתה התשובות. זה חלק מהתהליך.
+                    אני אשאל אתה השאלות הנכונות ואעזור לך להבין ולהביע אתה מה
+                    שאתה מרגיש.
                   </p>
                 </div>
 
@@ -411,19 +411,19 @@ export default function FourSessionsPage() {
                   תמיכה מלאה
                 </p>
                 <div className="text-sm text-[var(--ink)] opacity-70">
-                  זה שווה פחות מ-₪625 למפגש – השקעה קטנה שתשנה לך את החיים
+                  זה שווה פחות מ-₪625 למפגש – השקעה קטנה שתשנה לך אתה החיים
                 </div>
               </div>
 
               <p className="text-[18px] text-[var(--ink)] mb-8">
-                זה לא רק 4 מפגשים – זה תהליך שישנה לך את החיים. אתה תצא ממנו עם
+                זה לא רק 4 מפגשים – זה תהליך שישנה לך אתה החיים. אתה תצא ממנו עם
                 בהירות מלאה, חזון ברור, ותוכנית פעולה שתאפשר לך לבנות עסק שמרגיש
                 נכון ומתאים לך מכל הלב.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contact" className="btn btn-primary">
-                  אני רוצה להתחיל את התהליך - ₪2,500
+                  אני רוצה להתחיל אתה התהליך - ₪2,500
                 </a>
                 <a href="/services" className="btn btn-ghost">
                   חזרה לשירותים
@@ -443,10 +443,11 @@ export default function FourSessionsPage() {
             <div className="max-w-2xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[var(--ink)]">
-                  בואו נתחיל את התהליך שלכם
+                  בואו נתחיל אתה התהליך שלכם
                 </h2>
                 <p className="text-[18px] text-[var(--ink)] opacity-70">
-                  השאירו פרטים ואני אחזור אליכם תוך 24 שעות לתאם את המפגש הראשון
+                  השאירו פרטים ואני אחזור אליכם תוך 24 שעות לתאם אתה המפגש
+                  הראשון
                 </p>
               </div>
 

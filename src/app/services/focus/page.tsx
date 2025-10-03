@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header";
 import { ContactForm } from "@/components/contact-form";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function FocusServicePage() {
   return (
@@ -16,25 +16,25 @@ export default function FocusServicePage() {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8">
                 <span className="gradient-text">
-                  היי, בואי נשב ונשוחח על העסק שלך
+                  היי, בואו נשב ונשוחח על העסק שלך
                 </span>
               </h1>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8">
-                תחשבי על זה רגע... איזה מטורף זה - שאת עובדת קשה, יודעת שאת טובה
-                במה שאת עושה, אבל מרגישה קצת אבודה. לא יודעת איפה את עומדת, מה
-                הצעד הבא, או אם את בכלל מתקדמת בכיוון הנכון.
+                תחשוב על זה רגע... איזה מטורף זה - שאתה עובד קשה, יודע שאתה טוב
+                במה שאתה עושה, אבל מרגיש קצת אבוד. לא יודע איפה אתה עומד, מה
+                הצעד הבא, או אם אתה בכלל מתקדם בכיוון הנכון.
               </p>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8">
-                אני יודעת בדיוק איך את מרגישה. פגשתי מאות בעלי עסקים שמרגישים
+                אני יודעת בדיוק איך אתה מרגיש. פגשתי מאות בעלי עסקים שמרגישים
                 בדיוק ככה. והחדשות הטובות? בשיחה אחת של שעה, אני יכולה לעזור לך
-                לראות את התמונה המלאה ולהבין בדיוק איך להמשיך.
+                לראות אתה התמונה המלאה ולהבין בדיוק איך להמשיך.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contact" className="btn btn-primary">
-                  אני רוצה את השיחה הזו - ₪500
+                  אני רוצה אתה השיחה הזו - ₪500
                 </a>
                 <a href="/services" className="btn btn-ghost">
                   חזרה לשירותים
@@ -49,38 +49,38 @@ export default function FocusServicePage() {
           <div className="container-max">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-                את לא לבד, אני יודעת בדיוק איך את מרגישה
+                אתה לא לבד, אני יודעת בדיוק איך אתה מרגיש
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    אם את אומרת לעצמך את הדברים האלה, את לא לבד:
+                    אם אתה אומר לעצמך אתה הדברים האלה, אתה לא לבד:
                   </h3>
                   <ul className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
-                    <li>• "אני עובדת קשה אבל לא יודעת אם אני מתקדמת"</li>
-                    <li>• "יש לי רעיונות מדהימים אבל לא יודעת איפה להתחיל"</li>
+                    <li>• "אני עובד קשה אבל לא יודע אם אני מתקדם"</li>
+                    <li>• "יש לי רעיונות מדהימים אבל לא יודע איפה להתחיל"</li>
                     <li>• "המספרים והבירוקרטיה מבלבלים אותי"</li>
-                    <li>• "אני מרגישה שתקועה במקום"</li>
-                    <li>• "לא יודעת איך לתמחר נכון"</li>
+                    <li>• "אני מרגיש שתקוע במקום"</li>
+                    <li>• "לא יודע איך לתמחר נכון"</li>
                     <li>• "הרשויות והמסים מפחידים אותי"</li>
                   </ul>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mt-6 font-medium">
-                    ואת יודעת מה? זה נורמלי לגמרי! כל בעלת עסק טובה עברה את זה.
+                    ואתה יודע מה? זה נורמלי לגמרי! כל בעל עסק טוב עבר אתה זה.
                   </p>
                 </div>
 
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--rose-1)]">
-                    תדמיני איך תרגישי אחרי השיחה שלנו:
+                    תדמיין איך תרגיש אחרי השיחה שלנו:
                   </h3>
                   <ul className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
-                    <li>• ברור לך איפה את עומדת בדיוק</li>
-                    <li>• את יודעת מה הצעד הבא שלך</li>
-                    <li>• את מבינה מה באמת חוסם אותך</li>
+                    <li>• ברור לך איפה אתה עומד בדיוק</li>
+                    <li>• אתה יודע מה הצעד הבא שלך</li>
+                    <li>• אתה מבין מה באמת חוסם אותך</li>
                     <li>• יש לך תוכנית פעולה פשוטה וברורה</li>
-                    <li>• את רגועה יותר עם המצב</li>
-                    <li>• את מלאה מוטיבציה לפעול</li>
+                    <li>• אתה רגוע יותר עם המצב</li>
+                    <li>• אתה מלא מוטיבציה לפעול</li>
                   </ul>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mt-6 font-medium text-[var(--rose-1)]">
                     איך זה נשמע? זה אפשרי, ואני כאן לעזור לך להגיע לשם.
@@ -100,49 +100,48 @@ export default function FocusServicePage() {
               </h2>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8 text-center">
-                תחשבי על זה כמו שיחה עם חברה טובה שמבינה בעסקים. אני לא כאן
-                לשפוט או לבקר – אני כאן להקשיב, להבין, ולתת לך את הבהירות שאת
-                צריכה.
+                תחשוב על זה כמו שיחה עם חבר טוב שמבין בעסקים. אני לא כאן לשפוט
+                או לבקר – אני כאן להקשיב, להבין, ולתת לך אתה הבהירות שאתה צריך.
               </p>
 
               <div className="space-y-8">
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    🎯 שלב 1: בואי נכיר (15 דקות)
+                    🎯 שלב 1: בואו נכיר (15 דקות)
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
-                    נתחיל בזה שתספרי לי את הסיפור שלך. איך התחלת? איפה את עכשיו?
+                    נתחיל בזה שתספר לי את הסיפור שלך. איך התחלת? איפה אתה עכשיו?
                     מה מפריע לך? אני אקשיב לכל מילה, אשאל שאלות כדי להבין טוב
                     יותר, ואבין בדיוק מה המצב שלך.
                   </p>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    אין שיפוט, אין ביקורת – רק הבנה עמוקה של מה שאת עוברת. את
-                    יכולה לספר לי הכל.
+                    אין שיפוט, אין ביקורת – רק הבנה עמוקה של מה שאתה עובר. אתה
+                    יכול לספר לי הכל.
                   </p>
                 </div>
 
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    🔍 שלב 2: בואי נבין מה באמת קורה (20 דקות)
+                    🔍 שלב 2: בואו נבין מה באמת קורה (20 דקות)
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
-                    עכשיו בואי נסתכל יחד על המצב שלך – הפיננסי, העסקי והתודעתי.
+                    עכשיו בואו נסתכל יחד על המצב שלך – הפיננסי, העסקי והתודעתי.
                     אני אעזור לך לראות מה עובד ומה לא, מה באמת חוסם אותך, ואיפה
                     יש לך הזדמנויות מדהימות לצמיחה.
                   </p>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    ביחד נגלה את הדפוסים שמחזיקים אותך במקום, ונראה איך אפשר
+                    ביחד נגלה אתה הדפוסים שמחזיקים אותך במקום, ונראה איך אפשר
                     לשנות אותם בקלות.
                   </p>
                 </div>
 
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    🗺️ שלב 3: בואי נבנה תוכנית שתעבוד (20 דקות)
+                    🗺️ שלב 3: בואו נבנה תוכנית שתעבוד (20 דקות)
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)] mb-4">
-                    על בסיס מה שגילינו, בואי נבנה יחד תוכנית פעולה פשוטה וברורה.
-                    אני אתן לך 3-5 צעדים קונקרטיים שאת יכולה לבצע מיד, עם סדר
+                    על בסיס מה שגילינו, בואו נבנה יחד תוכנית פעולה פשוטה וברורה.
+                    אני אתהן לך 3-5 צעדים קונקרטיים שאתה יכול לבצע מיד, עם סדר
                     עדיפויות ברור.
                   </p>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
@@ -153,11 +152,11 @@ export default function FocusServicePage() {
 
                 <div className="card p-8">
                   <h3 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                    💪 שלב 4: בואי נסיים עם אנרגיה חיובית (5 דקות)
+                    💪 שלב 4: בואו נסיים עם אנרגיה חיובית (5 דקות)
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    נסיים עם העצמה. אני אעזור לך לראות את החוזקות המדהימות שלך,
-                    את ההזדמנויות שיש לך, ואת הדרך להצלחה. תיצאי מהשיחה מלאה
+                    נסיים עם העצמה. אני אעזור לך לראות אתה החוזקות המדהימות שלך,
+                    אתה ההזדמנויות שיש לך, ואתה הדרך להצלחה. תיצאי מהשיחה מלאה
                     אנרגיה ומוטיבציה לפעול!
                   </p>
                 </div>
@@ -171,11 +170,11 @@ export default function FocusServicePage() {
           <div className="container-max">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-                אז מה את באמת תקבלי מהשיחה הזו?
+                אז מה אתה באמת תקבלי מהשיחה הזו?
               </h2>
 
               <p className="text-[18px] leading-8 text-[var(--ink)] mb-8 text-center">
-                תחשבי על זה... שעה אחת של שיחה יכולה לשנות הכל. הנה מה שאת
+                תחשוב על זה... שעה אחת של שיחה יכולה לשנות הכל. הנה מה שאתה
                 תקבלי:
               </p>
 
@@ -247,7 +246,7 @@ export default function FocusServicePage() {
           <div className="container-max">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-                מה אומרים לקוחות שעברו את השיחה הזו?
+                מה אומרים לקוחות שעברו אתה השיחה הזו?
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8">
@@ -255,7 +254,7 @@ export default function FocusServicePage() {
                   <p className="text-[var(--ink)] mb-6 italic">
                     "הגעתי לשיחה מבולבלת לגמרי. לא ידעתי איפה להתחיל ומה לעשות.
                     אורלי הקשיבה לי בסבלנות, עזרה לי להבין מה באמת קורה, ונתנה
-                    לי תוכנית פעולה פשוטה. יצאתי מהשיחה עם בהירות מלאה!"
+                    לי תוכנית פעולה פשוטה. יצאתהי מהשיחה עם בהירות מלאה!"
                   </p>
                   <div className="text-sm text-[var(--rose-1)] font-semibold">
                     — שרה, מטפלת הוליסטית
@@ -265,7 +264,7 @@ export default function FocusServicePage() {
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
                     "חשבתי שהכל תקוע אצלי. בשיחה עם אורלי גיליתי שיש לי
-                    הזדמנויות שלא ידעתי עליהן. היא עזרה לי לראות את החוזקות שלי
+                    הזדמנויות שלא ידעתי עליהן. היא עזרה לי לראות אתה החוזקות שלי
                     ולבנות תוכנית שפועלת. תוך חודש כבר ראיתי שינוי!"
                   </p>
                   <div className="text-sm text-[var(--rose-1)] font-semibold">
@@ -287,7 +286,7 @@ export default function FocusServicePage() {
                 <div className="card p-8">
                   <p className="text-[var(--ink)] mb-6 italic">
                     "השיחה עם אורלי הייתה נקודת מפנה עבורי. היא עזרה לי להבין מה
-                    באמת חשוב לי ומה אני רוצה להשיג. יצאתי עם בהירות ותוכנית
+                    באמת חשוב לי ומה אני רוצה להשיג. יצאתהי עם בהירות ותוכנית
                     ברורה. מומלץ בחום!"
                   </p>
                   <div className="text-sm text-[var(--rose-1)] font-semibold">
@@ -313,7 +312,7 @@ export default function FocusServicePage() {
                     כמה זמן נמשכת השיחה?
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    השיחה נמשכת שעה מלאה. זה הזמן הנדרש כדי להבין לעומק את המצב
+                    השיחה נמשכת שעה מלאה. זה הזמן הנדרש כדי להבין לעומק אתה המצב
                     שלך, לנתח אותו, ולבנות תוכנית פעולה מותאמת.
                   </p>
                 </div>
@@ -333,8 +332,8 @@ export default function FocusServicePage() {
                     מה אם אני לא יודע מה לספר?
                   </h3>
                   <p className="text-[18px] leading-8 text-[var(--ink)]">
-                    אין בעיה! אני אשאל את השאלות הנכונות כדי לעזור לך להבין
-                    ולהביע את מה שאתה מרגיש. השיחה תהיה נוחה ולא מאיימת.
+                    אין בעיה! אני אשאל אתה השאלות הנכונות כדי לעזור לך להבין
+                    ולהביע אתה מה שאתה מרגיש. השיחה תהיה נוחה ולא מאיימת.
                   </p>
                 </div>
 
@@ -367,12 +366,12 @@ export default function FocusServicePage() {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[var(--ink)]">
-                מוכנה לצאת מהבלבול לבהירות מלאה?
+                מוכנה לצאתה מהבלבול לבהירות מלאה?
               </h2>
 
               <p className="text-[18px] text-[var(--ink)] mb-8">
-                תחשבי על זה... השיחה הזו יכולה להיות נקודת המפנה שלך. תוך שעה
-                אחת את תקבלי בהירות מלאה, תוכנית פעולה שתעבוד, והמוטיבציה לפעול
+                תחשוב על זה... השיחה הזו יכולה להיות נקודת המפנה שלך. תוך שעה
+                אחת אתה תקבלי בהירות מלאה, תוכנית פעולה שתעבוד, והמוטיבציה לפעול
                 מיד.
               </p>
 
@@ -382,7 +381,7 @@ export default function FocusServicePage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contact" className="btn btn-primary">
-                  אני רוצה את השיחה הזו - ₪500
+                  אני רוצה אתה השיחה הזו - ₪500
                 </a>
                 <a href="/services" className="btn btn-ghost">
                   חזרה לשירותים
@@ -402,10 +401,10 @@ export default function FocusServicePage() {
             <div className="max-w-2xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[var(--ink)]">
-                  בואו נתחיל את השיחה שלכם
+                  בואו נתחיל אתה השיחה שלכם
                 </h2>
                 <p className="text-[18px] text-[var(--ink)] opacity-70">
-                  השאירו פרטים ואני אחזור אליכם תוך 24 שעות לתאם את השיחה
+                  השאירו פרטים ואני אחזור אליכם תוך 24 שעות לתאם אתה השיחה
                 </p>
               </div>
 

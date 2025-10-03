@@ -101,7 +101,7 @@ export function HeroSection() {
 
             {/* Tagline under animation */}
             <p className="text-center text-lg text-orange-600 font-bold mt-4">
-              רואת חשבון ורואה אותך מעבר
+              יועצת עסקית ורואת חשבון ורואה אותך מעבר
             </p>
 
             {/* Floating Elements */}
