@@ -69,7 +69,7 @@ export default function ServicesPage() {
                   ותוכנית פעולה פשוטה וברורה.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/contact" className="btn btn-primary">
+                  <a href="/orly-landing/contact" className="btn btn-primary">
                     אני רוצה שיחת מיקוד
                   </a>
                   <a
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                   כיוון ותוכנית שתאפשר לך לנהל עסק שאתה מחובר אליו מכל הלב.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/contact" className="btn btn-primary">
+                  <a href="/orly-landing/contact" className="btn btn-primary">
                     אני רוצה להתחיל תהליך 4 מפגשים
                   </a>
                 </div>
@@ -115,7 +115,7 @@ export default function ServicesPage() {
                   ולשים את הפוקוס שלך איפה שבאמת חשוב – על העסק שלך.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/contact" className="btn btn-primary">
+                  <a href="/orly-landing/contact" className="btn btn-primary">
                     אני רוצה שאורלי תייצג אותי
                   </a>
                   <a

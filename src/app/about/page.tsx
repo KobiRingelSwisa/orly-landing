@@ -103,7 +103,7 @@ export default function AboutPage() {
                   עסקית שמקדמת תוצאות אמיתיות.
                 </p>
                 <div className="mt-8">
-                  <a href="/contact" className="btn btn-primary">
+                  <a href="/orly-landing/contact" className="btn btn-primary">
                     בואו נתחיל
                   </a>
                 </div>
