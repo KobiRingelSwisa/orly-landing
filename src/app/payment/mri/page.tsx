@@ -177,7 +177,7 @@ export default function MRIPaymentPage() {
               {/* Back Link */}
               <div className="text-center mt-8">
                 <a
-                  href="/orly-landing/services"
+                  href="/services"
                   className="text-[var(--ink-light)] hover:text-[var(--rose-1)] transition-colors"
                 >
                   ← חזרה לעמוד השירותים

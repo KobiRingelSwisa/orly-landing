@@ -51,7 +51,7 @@ export function Header() {
               אודות
             </Link>
             <Link
-              href="/orly-landing/services"
+              href="/services"
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold"
             >
               שירותים
@@ -133,7 +133,7 @@ export function Header() {
               אודות
             </Link>
             <Link
-              href="/orly-landing/services"
+              href="/services"
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-[var(--ink)] hover:text-[var(--rose-1)] transition-colors font-semibold text-lg"
             >
