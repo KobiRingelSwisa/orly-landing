@@ -4,6 +4,8 @@ import { Header } from "@/components/header";
 import { ContactForm } from "@/components/contact-form";
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function HomePage() {
   return (
     <>
@@ -36,7 +38,7 @@ export default function HomePage() {
             <div className="max-w-5xl mx-auto relative">
               {/* Decorative flower - Hero */}
               <Image
-                src="/flower-lineart.png"
+                src={`${basePath}/flower-lineart.png`}
                 alt=""
                 width={400}
                 height={400}
@@ -58,7 +60,7 @@ export default function HomePage() {
               <div className="max-w-4xl mx-auto relative">
                 {/* Decorative flower - "אז מי אני?" section */}
                 <Image
-                  src="/flower-lineart.png"
+                  src={`${basePath}/flower-lineart.png`}
                   alt=""
                   width={250}
                   height={250}
@@ -152,7 +154,7 @@ export default function HomePage() {
                   <div className="pt-6 relative">
                     {/* Decorative flower - Bottom CTA */}
                     <Image
-                      src="/flower-lineart.png"
+                      src={`${basePath}/flower-lineart.png`}
                       alt=""
                       width={450}
                       height={450}

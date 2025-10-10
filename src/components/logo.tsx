@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function Logo() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -12,7 +14,7 @@ export function Logo() {
       {/* Logo Image without background */}
       <div className="relative">
         <Image
-          src="/logo.png"
+          src={`${basePath}/logo.png`}
           alt="אורלי - יועצת עסקית תודעתית"
           width={96}
           height={96}
