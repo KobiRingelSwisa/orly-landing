@@ -49,83 +49,333 @@ export default function ServicesPage() {
       <main id="main" className="min-h-screen">
         <Header />
 
+        {/* Hero Section */}
         <section className="section-y">
           <div className="container-max">
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-              הדרך שלך לחופש כלכלי אמיתי
-            </h1>
+            <div className="max-w-5xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-[var(--ink)] mb-6">
+                השירותים שלי
+              </h1>
+              <p className="text-xl md:text-2xl text-[var(--ink)] leading-relaxed max-w-3xl mx-auto">
+                סינרגיה עסקית לחופש כלכלי – כי כסף הוא רק השתקפות של תודעה מנוהלת היטב
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <div className="space-y-12">
-              {/* שיחת מיקוד והכוונה - Main service */}
-              <div id="focus" className="card p-8">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[var(--ink)]">
-                  שיחת מיקוד – בואו נגלה מה מונע ממך לצאת לחופש כלכלי
-                </h2>
-                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אני פוגשת הרבה אנשים שמרגישים אבודים – עובדים כל כך קשה אבל לא רואים נחת,
-                  רוצים יותר זמן עם הילדים אבל לא יודעים איך להגיע לשם. בשיחה
-                  ממוקדת של שעה אנחנו עושים סדר: מה המצב כרגע, מה מונע ממך לצאת לחופש כלכלי,
-                  ומה הצעד הבא שלך כדי לחיות את החיים שחלמת עליהם. אתה יוצא עם בהירות
-                  ותוכנית פעולה פשוטה וברורה לחופש אמיתי.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/contact" className="btn btn-primary">
-                    אני רוצה שיחת מיקוד
-                  </a>
-                  <a
-                    href="https://orlycoach.ravpage.co.il"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-ghost"
-                  >
-                    טופס קיים
+        {/* Service 1 - MRI */}
+        <section className="section-y bg-[var(--paper)]">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="card p-8 md:p-12">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-3xl font-bold text-[var(--primary)]">1</span>
+                  <div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--ink)] mb-4">
+                      סריקת MRI תודעתית-עסקית
+                    </h2>
+                    <p className="text-lg text-[var(--ink-light)] mb-6">
+                      (Mindset · Reality · Income)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
+                  <p className="font-semibold">
+                    השירות הראשון והמרכזי שלי — נקודת הפתיחה לכל תהליך.
+                  </p>
+
+                  <p>
+                    זו סריקה אישית ומעמיקה שמטרתה למפות את כל הרבדים של המערכת שלך:
+                    התודעה, ההתנהלות העסקית, התמחור, הערך העצמי, התזרים והחזון.
+                  </p>
+
+                  <p>
+                    לאחר מילוי השאלון האישי, אני מפענחת את הסריקה בשיחה ממוקדת של כ־75 דקות,
+                    בה את מקבלת מפת כסף אישית וצעדים מדויקים לשינוי מיידי.
+                  </p>
+
+                  <div className="bg-[var(--paper)] p-6 rounded-lg mt-6">
+                    <p className="font-semibold mb-2">עלות: ₪888</p>
+                    <p className="mb-4">מבנה השירות: תשלום → שאלון אישי → פגישה לפענוח MRI</p>
+                  </div>
+
+                  <p className="text-[var(--ink-light)] mt-4">
+                    מתאים לעצמאים, מטפלים, מאמנים ובעלי עסקים שרוצים לראות את האמת במראה – 
+                    בלי פילטרים, אבל עם דרך פעולה ברורה.
+                  </p>
+                </div>
+
+                <div className="mt-8">
+                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                    אני רוצה את סריקת ה־MRI שלי (₪888) →
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              {/* תהליך 4 מפגשים - Main service */}
-              <div id="four" className="card p-8">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[var(--ink)]">
-                  תהליך עומק – 4 מפגשים לחופש כלכלי אמיתי
-                </h2>
-                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  יש אנשים שמרגישים שהם עובדים קשה אבל לא באמת מגיעים למקום שהם רוצים להיות בו.
-                  בתהליך של ארבעה מפגשים אני מלווה אותך צעד־צעד
-                  לגלות מה באמת חשוב לך, איזה אמונות על כסף וחיים עוצרות אותך,
-                  ואיך אפשר לבנות חיים של חופש כלכלי אמיתי. ביחד נבנה בהירות,
-                  כיוון ותוכנית שתאפשר לך לחיות את החיים שחלמת עליהם.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/contact" className="btn btn-primary">
-                    אני רוצה להתחיל תהליך 4 מפגשים
+        {/* Service 2 - Core Process */}
+        <section className="section-y">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="card p-8 md:p-12">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-3xl font-bold text-[var(--primary)]">2</span>
+                  <div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--ink)]">
+                      תהליך הליבה – סינרגיה עסקית לחופש כלכלי
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
+                  <p>
+                    תהליך ליווי אישי של 8–12 מפגשים,
+                    שבו אנחנו בונות יחד מערכת עסקית תודעתית שמייצרת חופש אמיתי —
+                    במחשבה, בבנק ובחיים עצמם.
+                  </p>
+
+                  <div className="mt-6">
+                    <p className="font-semibold mb-4">מה כולל התהליך:</p>
+                    <ul className="space-y-3 mr-6">
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>
+                          <strong>יישור תדר עסקי</strong> – ניקוי חסמים רגשיים סביב כסף, ערך והשוואה.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>
+                          <strong>מודל רווח מותאם אישית</strong> – תמחור, תזרים ומבנה שירותים נכון לעסק שלך.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>
+                          <strong>ניהול אנרגיה עסקית</strong> – בניית לו״ז, תפעול ושיווק בתדר שמזין אותך, לא שוחק אותך.
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>
+                          <strong>חיבור לייעוד</strong> – הגדרה מדויקת של מה באת לתת לעולם, ואיך להפוך את זה למקור הכנסה.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-[var(--paper)] p-6 rounded-lg mt-6">
+                    <p>
+                      זה לא "עוד ליווי עסקי".<br/>
+                      זה תהליך של יישום תודעה הלכה למעשה –
+                      עם תוצאות שנמדדות גם בכסף וגם בשקט פנימי.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                    אני רוצה לשמוע עוד על התהליך →
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              {/* שירותי ייצוג - Secondary service */}
-              <div id="represent" className="card p-8">
-                <h2 className="text-xl md:text-2xl font-bold mb-6 text-[var(--ink)]">
-                  ליווי כולל לחופש כלכלי
-                </h2>
-                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אני יודעת כמה מתסכל זה להתמודד עם כל מה שקשור לכסף, עם מכתבים שלא
-                  נגמרים ועם בירוקרטיה שגוזלת זמן ואנרגיה. במקום שתבזבז שעות
-                  ותלחץ מכל דבר שקשור לכסף, אני כאן כדי ללוות אותך בכל מה שאתה צריך.
-                  אני אטפל בכל הניירת, אדאג שכל מה שצריך יטופל בזמן ובצורה מסודרת,
-                  ואעזור לך להתמודד עם הפחדים והאמונות שחוסמות אותך. ככה אתה יכול להיות רגוע
-                  ולשים את הפוקוס שלך איפה שבאמת חשוב – על החיים שחלמת עליהם.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                  <a href="/contact" className="btn btn-primary">
-                    אני רוצה ליווי כולל לחופש כלכלי
+        {/* Service 3 - Financial Guidance */}
+        <section className="section-y bg-[var(--paper)]">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="card p-8 md:p-12">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-3xl font-bold text-[var(--primary)]">3</span>
+                  <div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--ink)]">
+                      ליווי פיננסי לעצמאים בהתפתחות
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
+                  <p>
+                    שירות ייחודי לעצמאים שנמצאים בצמיחה מהירה,
+                    ומבקשים שליטה פיננסית מדויקת לצד התפתחות עסקית ותודעתית.
+                  </p>
+
+                  <div className="mt-6">
+                    <p className="font-semibold mb-4">מה כולל השירות:</p>
+                    <ul className="space-y-3 mr-6">
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>ניהול תזרים ותכנון מס חכם.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>בניית רווח גולמי ונקי לפי מטרות אישיות.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>ליווי בהצעות מחיר, הצהרות הון ודוחות שנתיים.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>התאמה בין מבנה העסק למבנה החיים.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg mt-6">
+                    <p className="font-semibold">
+                      השירות הזה נולד כי כסף לא צריך להלחיץ – הוא צריך לשרת אותך.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                    אני רוצה ליווי פיננסי →
                   </a>
-                  <a
-                    href="https://lp.vp4.me/p3ay"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-ghost"
-                  >
-                    למידע נוסף קיים
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service 4 - Focused Sessions */}
+        <section className="section-y">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="card p-8 md:p-12">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-3xl font-bold text-[var(--primary)]">4</span>
+                  <div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--ink)]">
+                      מפגשי דיוק ממוקדים / התייעצות נקודתית
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
+                  <p>
+                    למי שכבר עברה תהליך ומרגישה תקועה בנושא אחד:
+                    תמחור, שיווק, ניהול, תזרים, הצעת ערך או חסם תודעתי נקודתי.
+                  </p>
+
+                  <p>
+                    פגישה חד־פעמית (90 דק׳) ממוקדת פתרון.
+                  </p>
+
+                  <div className="bg-[var(--paper)] p-6 rounded-lg mt-6">
+                    <p className="font-semibold">
+                      מפגש חד, ישיר, בלי סיפורים – עם תשובה מדויקת וצעדים ברורים להמשך.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                    אני רוצה מפגש ממוקד →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service 5 - Lectures & Workshops */}
+        <section className="section-y bg-[var(--paper)]">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="card p-8 md:p-12">
+                <div className="flex items-start gap-4 mb-6">
+                  <span className="text-3xl font-bold text-[var(--primary)]">5</span>
+                  <div>
+                    <h2 className="text-2xl md:text-3xl font-bold text-[var(--ink)]">
+                      הרצאות וסדנאות לארגונים וקהילות
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
+                  <p>
+                    אני מעבירה הרצאות וסדנאות שמשלבות ידע פיננסי, תודעה וכלים מעשיים לניהול עצמי וכלכלי.
+                    מתאים לארגונים, קהילות ועסקים שמעוניינים לעורר השראה מתוך פרקטיקה.
+                  </p>
+
+                  <div className="mt-6">
+                    <p className="font-semibold mb-4">נושאים פופולריים:</p>
+                    <ul className="space-y-3 mr-6">
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>"תודעת שפע בעולם של מספרים"</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>"איך לנהל כסף ואנרגיה באותו תדר"</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-[var(--primary)] mt-1">•</span>
+                        <span>"מה בין צמיחה עסקית להתפתחות אישית"</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg mt-6">
+                    <p>
+                      כל הרצאה נתפרת בהתאמה אישית לקהל ולמטרה.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                    אני רוצה הרצאה או סדנה →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Work With Me Section */}
+        <section className="section-y">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-[var(--ink)] mb-8">
+                  למה לעבוד איתי
+                </h2>
+              </div>
+
+              <div className="max-w-3xl mx-auto">
+                <div className="space-y-4 text-[18px] leading-8 text-[var(--ink)]">
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <span className="text-[var(--primary)] mt-1">•</span>
+                      <span>כי אני רואה גם את המספרים וגם את האנרגיה שמפעילה אותם.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[var(--primary)] mt-1">•</span>
+                      <span>כי אני לא מאמינה בקיצורי דרך – אלא בדיוק.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[var(--primary)] mt-1">•</span>
+                      <span>כי אני לא מלמדת תיאוריה – אני חיה אותה.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-[var(--primary)] mt-1">•</span>
+                      <span>וכי השפע שאת מבקשת — כבר שלך. אני פשוט עוזרת לך לראות את הדרך לשם.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="text-center mt-12">
+                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                    אני רוצה את סריקת ה־MRI שלי (₪888) →
                   </a>
                 </div>
               </div>

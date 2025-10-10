@@ -51,61 +51,122 @@ export default function AboutPage() {
         <Header />
 
         <section className="section-y">
-          <div className="container-max max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[var(--ink)]">
-              נעים להכיר, אני אורלי
-            </h1>
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="max-w-4xl mx-auto">
+                <h1 className="text-3xl md:text-4xl font-bold text-[var(--ink)] mb-12">
+                  קצת עליי
+                </h1>
 
-            <div className="space-y-8">
-              <div className="card p-8">
-                <h2 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                  מי אני
-                </h2>
-                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אני יועצת עסקית ורואת חשבון עם 20 שנות ניסיון, ואני מאמנת
-                  עסקית. השילוב הזה בין מספרים לתודעה הוא מה שהופך את העבודה שלי
-                  לייחודית ויעילה.
-                </p>
-                <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  למדתי שהעסקים הכי מצליחים הם אלה שמשלבים בין סדר פיננסי לחשיבה
-                  תודעתית. זה לא רק על המספרים – זה על ההבנה העמוקה של מה שמניע
-                  אותך ומה מונע ממך.
-                </p>
+                <div className="text-[18px] leading-8 text-[var(--ink)] space-y-6">
+                  <p>
+                    קוראים לי אורלי בן הרוש, ואני מאמינה ששפע הוא לא מטרה – הוא
+                    תוצאה של יישור קו בין תודעה, פעולה ותוצאה פיננסית.
+                  </p>
+
+                  <p>
+                    אני רואת חשבון כבר למעלה משני עשורים, מלווה עסקים, עצמאים
+                    ומטפלים, ומזה כמה שנים גם יועצת תודעתית שמלמדת איך להפוך את
+                    הידע הרוחני שלך למערכת עסקית חכמה שמכניסה כסף בשקט ובזרימה.
+                  </p>
+
+                  <p>
+                    ראיתי אינספור עסקים מצליחים "על הנייר" שקורסים מבפנים,
+                    ואנשים עם תודעת שפע ענקית — שמתרגשים מהמילים אבל מפחדים
+                    מהמספרים. ושם הבנתי: אין תודעה בלי מבנה, ואין מבנה בלי
+                    תודעה.
+                  </p>
+
+                  <p className="text-xl font-semibold">
+                    רק כששני העולמות נפגשים – נולדת מציאות של חופש אמיתי.
+                  </p>
+
+                  <p>
+                    היום אני משלבת את שני הקצוות האלה – החישוב הקר והאנרגיה
+                    החמה, הניהול והתדר, החזון והביצוע.
+                  </p>
+
+                  <p>
+                    אני לא באה "ללמד" אותך – אני באה להזכיר לך. איך לחזור לפעול
+                    בדרך שלך. איך לדבר עם כסף בלי פחד. ואיך לנהל עסק שלא מתיש
+                    אותך – אלא מזין אותך.
+                  </p>
+                </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <div className="card p-8">
-                <h2 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                  מה מיוחד בשילוב שלי
+        <section className="section-y bg-[var(--paper)]">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold text-[var(--ink)] mb-8">
+                  מה מבדל אותי
                 </h2>
-                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  פשוטות וגובה העיניים הם הבסיס שלי. אני לא מדברת בשפה מקצועית
-                  מורכבת – אני מסבירה הכל בפשטות, כי אני מאמינה שכשאתה מבין מה
-                  קורה, אתה יכול לקבל החלטות נכונות.
-                </p>
-                <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  השילוב בין אימון לכסף מאפשר לי לראות את התמונה המלאה – גם את
-                  המספרים וגם את האמונות והפחדים שמשפיעים על ההחלטות שלך.
-                </p>
+
+                <div className="text-[18px] leading-8 text-[var(--ink)] space-y-6">
+                  <div>
+                    <p className="font-semibold mb-2">
+                      • אני רואה את התמונה המלאה.
+                    </p>
+                    <p className="mb-4">
+                      אני סורקת את העסק שלך גם דרך המספרים וגם דרך האנרגיה
+                      שמפעילה אותם.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold mb-2">
+                      • אני לא מוכרת מוטיבציה.
+                    </p>
+                    <p className="mb-4">
+                      אני עובדת רק עם אנשים שבאים לזוז – תכל'ס, בשטח, בתוצאות.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold mb-2">
+                      • אני מבינה אותך מבפנים.
+                    </p>
+                    <p>
+                      עברתי בעצמי תקופות של חוסר, בלבול, חיפוש ותקומה. זה לא
+                      תיאוריה, זו דרך חיים.
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <div className="card p-8">
-                <h2 className="text-2xl font-bold mb-6 text-[var(--ink)]">
-                  איך נראה שיתוף פעולה איתי
+        <section className="section-y">
+          <div className="container-max">
+            <div className="max-w-5xl mx-auto">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold text-[var(--ink)] mb-8">
+                  מה שאני מאמינה בו
                 </h2>
-                <p className="text-[18px] leading-8 text-[var(--ink)] mb-6">
-                  אנחנו מתחילים בשיחה ממוקדת שבה אני מבינה איפה אתה נמצא ומה
-                  חוסם אותך. יחד נבנה תוכנית פעולה שמשלבת סדר פיננסי עם פיתוח
-                  תודעה עסקית.
-                </p>
-                <p className="text-[18px] leading-8 text-[var(--ink)]">
-                  המטרה שלי היא לעזור לך ליצור סדר פיננסי שמאפשר לך להתמקד במה
-                  שאתה הכי טוב בו – לתת שירות מעולה ללקוחות שלך. ביחד נפתח תודעה
-                  עסקית שמקדמת תוצאות אמיתיות.
-                </p>
-                <div className="mt-8">
-                  <a href="/contact" className="btn btn-primary">
-                    בואו נתחיל
-                  </a>
+
+                <div className="text-[18px] leading-8 text-[var(--ink)] space-y-6">
+                  <p>
+                    הצלחה אמיתית היא לא תוצאה של מזל – אלא של אדם שחי, פועל
+                    ומרגיש בתדר הנכון.
+                  </p>
+
+                  <p>
+                    וכשאת לומדת לנהל את האנרגיה שלך כמו את התקציב שלך, המציאות
+                    שלך מתחילה להגיב אחרת.
+                  </p>
+
+                  <p>
+                    <a
+                      href="/contact"
+                      className="btn btn-primary text-lg px-8 py-4 inline-block"
+                    >
+                      אני רוצה את סריקת ה־MRI שלי (₪888) →
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
