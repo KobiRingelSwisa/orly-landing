@@ -107,7 +107,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="mt-8">
-                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                  <a href="/payment/mri" className="btn btn-primary text-lg px-8 py-4">
                     אני רוצה את סריקת ה־MRI שלי (₪888) →
                   </a>
                 </div>
@@ -374,7 +374,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="text-center mt-12">
-                  <a href="/contact" className="btn btn-primary text-lg px-8 py-4">
+                  <a href="/payment/mri" className="btn btn-primary text-lg px-8 py-4">
                     אני רוצה את סריקת ה־MRI שלי (₪888) →
                   </a>
                 </div>

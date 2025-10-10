@@ -161,7 +161,7 @@ export default function AboutPage() {
 
                   <p>
                     <a
-                      href="/contact"
+                      href="/payment/mri"
                       className="btn btn-primary text-lg px-8 py-4 inline-block"
                     >
                       אני רוצה את סריקת ה־MRI שלי (₪888) →

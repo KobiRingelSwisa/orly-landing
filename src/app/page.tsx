@@ -176,7 +176,7 @@ export default function HomePage() {
                     <p className="text-2xl font-bold text-[var(--rose-1)] mb-6">
                       עלות ההצטרפות לסריקה ולפענוח: ₪888
                     </p>
-                    <a href="/contact" className="btn btn-primary inline-block">
+                    <a href="/payment/mri" className="btn btn-primary inline-block">
                       אני רוצה לבצע את הסריקה
                     </a>
                   </div>
@@ -250,7 +250,7 @@ export default function HomePage() {
 
                   <p>
                     <a
-                      href="/contact"
+                      href="/payment/mri"
                       className="btn btn-primary text-lg px-8 py-4 inline-block"
                     >
                       אני רוצה את סריקת ה־MRI שלי (₪888) →
